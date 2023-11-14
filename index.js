@@ -1,4 +1,9 @@
-let punya_lsbtv = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let punya_rcti = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let punya_soccerch = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+
+
+
+
 async function initRcti() {
   const video = document.getElementById('rcti');
   const ui = video['ui'];
@@ -27,7 +32,7 @@ async function initRcti() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punya_lsbtv);
+    await player.load(punya_rcti);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -66,7 +71,7 @@ async function initSoccerch() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load('https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd');
+    await player.load(punya_soccerch);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -902,6 +907,10 @@ document.addEventListener('shaka-ui-loaded', init27);
 
 
 function changeSource() {
-  punya_lsbtv = 'https://lsbplus.pisionpluss.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  punya_rcti = 'https://lsbplus.pisionpluss.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  initRcti();
+}
+function changeSource() {
+  punya_soccerch = 'https://lsbplus.pisionpluss.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
   initRcti();
 }
