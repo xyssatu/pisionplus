@@ -1,7 +1,7 @@
 let punya_lsbtv_rcti = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 let punya_lsbtv_soccerch = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
 
-async function initRcti() {
+async function init1() {
   const video = document.getElementById('rcti');
   const ui = video['ui'];
   const config = {
@@ -35,7 +35,7 @@ async function initRcti() {
   }
 }
 
-function initSoccerch() {
+function init2() {
   const video = document.getElementById('soccerch');
   const ui = video['ui'];
   const config = {
@@ -85,8 +85,8 @@ function initFailed(errorEvent) {
   console.error('Unable to load the UI library!');
 }
 
-document.addEventListener('shaka-ui-loaded', initRcti);
-document.addEventListener('shaka-ui-loaded', initSoccerch);
+document.addEventListener('shaka-ui-loaded', init1);
+document.addEventListener('shaka-ui-loaded', init2);
 document.addEventListener('shaka-ui-load-failed', initFailed);
 
 
