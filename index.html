@@ -149,7 +149,7 @@ document.addEventListener('shaka-ui-load-failed', initFailed);
 	 <script>
     // Dapatkan parameter 'id' dari URL
     var url = new URL(window.location.href);
-    var idFromURL = url.searchParams.get("id");
+    var idFromURL = url.searchParams.get("rp");
 
     // Perbarui atribut onclick dengan idFromURL yang diperoleh secara dinamis
     var changeSourceButton = document.querySelector('.btn2[onclick="changeSource()"]');
