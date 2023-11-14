@@ -906,11 +906,14 @@ document.addEventListener('shaka-ui-loaded', init27);
 
 
 
-function changeSourceRcti() {
-  punya_rcti = 'https://lsbplus.pisionpluss.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
-  initRcti();
-}
-function changeSourceSoccerch() {
+
+
+function changeSource() {
   punya_soccerch = 'https://lsbplus.pisionpluss.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
   initSoccerch();
 }
+function changeSource() {
+  punya_rcti = 'https://lsbplus.pisionpluss.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  initRcti();
+}
+
