@@ -61,7 +61,7 @@
 		<center>
 		<fieldset class="btn0">
   <legend class="btn1" >ASPEK RASIO</legend>
-<button class="btn2" onclick="changeSource()">EROR? COBA INI			
+<button class="btn2" id="changeSourceButton">EROR? COBA INI</button>			
  <button class="btn2" onclick="fill ()">FILL
   <button class="btn2" onclick="fit ()">FIT
  </button>
@@ -146,15 +146,13 @@ document.addEventListener('shaka-ui-load-failed', initFailed);
         }
 	</script>
 
-	 <script>
+	<script>
     // Dapatkan parameter 'id' dari URL
     var url = new URL(window.location.href);
     var idFromURL = url.searchParams.get("rp");
 
-    // Temukan tombol dengan kelas btn2 dan fungsi onclick "changeSource()"
-    var changeSourceButton = document.querySelector('.btn2[onclick="changeSource()"]');
-    
-    // Perbarui fungsi onclick dengan fungsi baru yang memanggil changeSource() dengan parameter idFromURL
+    // Perbarui onclick untuk memanggil changeSource() dengan idFromURL
+    var changeSourceButton = document.getElementById('changeSourceButton');
     if (changeSourceButton) {
         changeSourceButton.onclick = function () {
             changeSource(idFromURL);
