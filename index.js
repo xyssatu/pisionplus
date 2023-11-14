@@ -1,4 +1,4 @@
-let punya_lsbtv_rcti = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let punya_lsbtv_rcti = '';
 let punya_lsbtv_soccerch = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
 
 async function init1() {
@@ -28,7 +28,7 @@ async function init1() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punya_lsbtv_rcti);
+    await player.load('https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd');
     console.log('RCTI video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
