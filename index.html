@@ -151,23 +151,16 @@ document.addEventListener('shaka-ui-load-failed', initFailed);
     var url = new URL(window.location.href);
     var idFromURL = url.searchParams.get("rp");
 
-    // Perbarui onclick untuk memanggil changeSource() dengan idFromURL
-    var changeSourceButton = document.getElementById('changeSourceButton');
-    if (changeSourceButton) {
-        changeSourceButton.onclick = function () {
-            changeSource(idFromURL);
-        };
-    }
-
-    // Fungsi untuk mengganti sumber berdasarkan id yang diberikan
-    function changeSource(videoId) {
+    // Tambahkan event listener untuk memanggil fungsi changeSource() saat dokumen dimuat
+    document.addEventListener('DOMContentLoaded', function () {
         // Gantilah dengan logika Anda untuk mengganti sumber video berdasarkan ID
-        // Contoh: console.log('Mengganti sumber untuk ID video:', videoId);
+        // Contoh: console.log('Mengganti sumber untuk ID video:', idFromURL);
 
-        // Untuk tujuan contoh, kita akan mencetak nilai videoId ke konsol
-        console.log('Mengganti sumber untuk ID video:', videoId);
-    }
-</script>
+        // Untuk tujuan contoh, kita akan mencetak nilai idFromURL ke konsol
+        console.log('Mengganti sumber untuk ID video:', idFromURL);
+    });
+	</script>
+	
 
 
 	 
