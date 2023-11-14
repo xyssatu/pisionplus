@@ -1,5 +1,4 @@
-let punya_lsbtv_rcti = '';
-let punya_lsbtv_soccerch = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+
 
 async function init1() {
   const video = document.getElementById('rcti');
