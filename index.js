@@ -913,7 +913,7 @@ function changeSourceSoccerch() {
   initSoccerch();
 }
 function changeSourceRcti() {
-  punya_rcti = 'https://lsbplus.pisionpluss.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  punya_rcti = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
   initRcti();
 }
 
