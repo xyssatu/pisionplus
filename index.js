@@ -909,7 +909,7 @@ document.addEventListener('shaka-ui-loaded', init27);
 
 
 function changeSourceSoccerch() {
-  punya_soccerch = 'https://lsbplus.pisionpluss1.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+  punya_soccerch = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
   initSoccerch();
 }
 function changeSourceRcti() {
