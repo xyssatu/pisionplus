@@ -4,7 +4,7 @@ let punya_sportstar3 = 'https://mangga-live-cdn.mncnow.id/live/eds/MNCSports3-HD
 let punya_sportstar4 = 'https://mangga-live-cdn.mncnow.id/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
 let punya_sportstar2 = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 let punya_sportstar1 = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
-let punya_oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let punya_oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
 let punya_musictv = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
 
 
@@ -96,7 +96,7 @@ async function initOketv() {
   player.configure({
     drm: {
       clearKeys: {
-        '9ba3e153ef8956d6e2b0684fcf74f58f': 'dbc28cb5c6426080f984a5b6d436bb30'
+        '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7'
       }
     }
   });
@@ -1039,6 +1039,6 @@ function changeSourceSportstar4() {
 }
 
 function changeSourceOktv() {
-  punya_oketv = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  punya_oketv = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
   initOketv();
 }
