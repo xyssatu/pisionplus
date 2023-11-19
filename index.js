@@ -80,7 +80,7 @@ async function initSportstar4() {
 }
 
 
-async function initOketv() {
+async function initOktv() {
   const video = document.getElementById('oktv');
   const ui = video['ui'];
   const config = {
@@ -1038,5 +1038,5 @@ function changeSourceSportstar4() {
 
 function changeSourceOktv() {
   punya_oketv = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
-  initOketv();
+  initOktv();
 }
