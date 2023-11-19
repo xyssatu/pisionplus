@@ -1017,11 +1017,9 @@ document.addEventListener('shaka-ui-loaded', init27);
  document.addEventListener('shaka-ui-loaded', init29);
 
 
-
-
-
+//pisionplus5 tidak ada
 function changeSourceSoccerch() {
-  punya_soccerch = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+  punya_soccerch = 'https://lsbplus.pisionpluss1.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
   initSoccerch();
 }
 function changeSourceRcti() {
@@ -1030,15 +1028,15 @@ function changeSourceRcti() {
 }
 
 function changeSourceSportstar3() {
-  punya_sportstar3 = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  punya_sportstar3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
   initSportstar3();
 }
 function changeSourceSportstar4() {
-  punya_sportstar4 = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+  punya_sportstar4 = 'https://lsbplus.pisionpluss4.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
   initSportstar4();
 }
 
 function changeSourceOktv() {
-  punya_oketv = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+  punya_oketv = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
   initOketv();
 }
