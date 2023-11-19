@@ -1,5 +1,11 @@
 let punya_rcti = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 let punya_soccerch = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+let punya_sportstar3 = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let punya_sportstar4 = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+let punya_sportstar2 = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let punya_sportstar1 = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+let punya_oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let punya_musictv = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
 
 
 
@@ -969,15 +975,15 @@ function initFailed(errorEvent) {
 
 document.addEventListener('shaka-ui-loaded', initSoccerch);
 document.addEventListener('shaka-ui-load-failed', initFailed);
-document.addEventListener('shaka-ui-loaded', init2);
+document.addEventListener('shaka-ui-loaded', initSportstar3);
 
-document.addEventListener('shaka-ui-loaded', init3);
+document.addEventListener('shaka-ui-loaded', initSportstar4);
 
- document.addEventListener('shaka-ui-loaded', init4);
- document.addEventListener('shaka-ui-loaded', init5);
-document.addEventListener('shaka-ui-loaded', init6);
+ document.addEventListener('shaka-ui-loaded', initOktv);
+ document.addEventListener('shaka-ui-loaded', initMusictv);
+document.addEventListener('shaka-ui-loaded', initSportstar2);
 
-document.addEventListener('shaka-ui-loaded', init7);
+document.addEventListener('shaka-ui-loaded', initSportstar1);
 
  document.addEventListener('shaka-ui-loaded', init8);
  document.addEventListener('shaka-ui-loaded', init9);
