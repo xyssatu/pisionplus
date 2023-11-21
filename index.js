@@ -5,7 +5,7 @@ let punya_sportstar2 = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_da
 let punya_sportstar1 = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
 let punya_oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
 let punya_musictv = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
-let punya_rcti1 = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let punya_rcti = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 
 
 async function initRcti1() {
