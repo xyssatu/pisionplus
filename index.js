@@ -1018,7 +1018,7 @@ document.addEventListener('shaka-ui-loaded', init27);
 
 //pisionplus5 tidak ada
 function changeSourceSoccerch() {
-  punya_soccerch = 'https://lsbplus.pisionpluss1.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
+  punya_soccerch = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
   initSoccerch();
 }
 function changeSourceRcti() {
