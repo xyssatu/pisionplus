@@ -5,8 +5,43 @@ let punya_sportstar2 = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_da
 let punya_sportstar1 = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
 let punya_oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
 let punya_musictv = 'https://mangga-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
-let punya_rcti = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let punya_rcti1 = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 
+
+async function initRcti1() {
+  const video = document.getElementById('rcti1');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '9ba3e153ef8956d6e2b0684fcf74f58f': 'dbc28cb5c6426080f984a5b6d436bb30'
+      }
+    }
+  });
+ // player.configure('manifest.dash.ignoreMinBufferTime', true);
+  //player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(punya_rcti1);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
 
 
 async function initSportstar3() {
@@ -985,7 +1020,7 @@ document.addEventListener('shaka-ui-loaded', initSportstar2);
 
 document.addEventListener('shaka-ui-loaded', initSportstar1);
 
- document.addEventListener('shaka-ui-loaded', init8);
+ document.addEventListener('shaka-ui-loaded', initRcti1);
  document.addEventListener('shaka-ui-loaded', init9);
 document.addEventListener('shaka-ui-loaded', init10);
 document.addEventListener('shaka-ui-loaded', initRcti);
@@ -1023,8 +1058,13 @@ function changeSourceSoccerch() {
   initSoccerch();
 }
 function changeSourceRcti() {
-  punya_rcti = 'https://mangga-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  punya_rcti = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
   initRcti();
+}
+
+function changeSourceRcti1() {
+  punya_rcti = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  initRcti1();
 }
 
 
