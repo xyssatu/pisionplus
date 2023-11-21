@@ -1063,10 +1063,18 @@ function changeSourceRcti() {
 }
 
 function changeSourceRcti1() {
-  punya_rcti = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  punya_rcti1 = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
   initRcti1();
 }
 
+function changeSourceSportstar1() {
+  punya_sportstar3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  initSportstar1();
+}
+function changeSourceSportstar2() {
+  punya_sportstar4 = 'https://lsbplus.pisionpluss4.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+  initSportstar2();
+}
 
 function changeSourceSportstar3() {
   punya_sportstar3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
@@ -1080,4 +1088,9 @@ function changeSourceSportstar4() {
 function changeSourceOktv() {
   punya_oketv = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
   initOktv();
+}
+
+function changeSourceMusictv() {
+  punya_oketv = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+  initMusictv();
 }
