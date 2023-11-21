@@ -179,7 +179,7 @@ async function initRcti() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punyarcti);
+    await player.load(punya_sportstar3);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
