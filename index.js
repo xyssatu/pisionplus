@@ -1041,11 +1041,11 @@ function changeSourceSportstar2() {
 }
 
 function changeSourceSportstar3() {
-  punya_sportstar3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  punya_sportstar3 = 'https://lsbplus.pisionpluss1.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
   initSportstar3();
 }
 function changeSourceSportstar4() {
-  punya_sportstar4 = 'https://lsbplus.pisionpluss4.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+  punya_sportstar4 = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
   initSportstar4();
 }
 
