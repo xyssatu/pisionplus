@@ -64,8 +64,8 @@ async function initSportstar3() {
       }
     }
   });
- // player.configure('manifest.dash.ignoreMinBufferTime', true);
-  //player.configure('streaming.rebufferingGoal', 1 /* second */);
+ player.configure('manifest.dash.ignoreMinBufferTime', true);
+ player.configure('streaming.rebufferingGoal', 1 /* second */);
   window.player = player;
   window.ui = ui;
 
@@ -99,8 +99,8 @@ async function initSportstar4() {
       }
     }
   });
- // player.configure('manifest.dash.ignoreMinBufferTime', true);
-  //player.configure('streaming.rebufferingGoal', 1 /* second */);
+ player.configure('manifest.dash.ignoreMinBufferTime', true);
+  player.configure('streaming.rebufferingGoal', 1 /* second */);
   window.player = player;
   window.ui = ui;
 
@@ -135,8 +135,8 @@ async function initOktv() {
       }
     }
   });
- // player.configure('manifest.dash.ignoreMinBufferTime', true);
-  //player.configure('streaming.rebufferingGoal', 1 /* second */);
+  player.configure('manifest.dash.ignoreMinBufferTime', true);
+  player.configure('streaming.rebufferingGoal', 1 /* second */);
   window.player = player;
   window.ui = ui;
 
@@ -174,8 +174,8 @@ async function initSoccerch() {
       }
     }
   });
-  //player.configure('manifest.dash.ignoreMinBufferTime', true);
-  //player.configure('streaming.rebufferingGoal', 1 /* second */);
+  player.configure('manifest.dash.ignoreMinBufferTime', true);
+  player.configure('streaming.rebufferingGoal', 1 /* second */);
   window.player = player;
   window.ui = ui;
 
