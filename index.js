@@ -9,7 +9,7 @@ let punya_musictv = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchann
 let punya_rcti = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 
 
-async function initRcti() {
+async function initSportstar2() {
   const video = document.getElementById('rcti');
   const ui = video['ui'];
   const config = {
@@ -256,7 +256,7 @@ function changeSourceSoccerch() {
   punya_soccerch = 'https://lsbplus.pisionpluss1.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
   initSoccerch();
 }
-function changeSourceRcti() {
+function changeSourceSportstar2() {
   punyarcti = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
   initRcti();
 }
@@ -270,7 +270,7 @@ function changeSourceSportstar1() {
   punya_sportstar3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
   initSportstar1();
 }
-function changeSourceSportstar2() {
+function changeSourceSportstar22() {
   punya_sportstar4 = 'https://lsbplus.pisionpluss4.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
   initSportstar2();
 }
