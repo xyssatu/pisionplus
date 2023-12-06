@@ -305,7 +305,7 @@ async function init8() {
 
 //LOKAL
 
-async function init7() {
+async function init9() {
   const video = document.getElementById('rcti');
   const ui = video['ui'];
   const config = {
