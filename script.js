@@ -283,21 +283,21 @@ function initFailed(errorEvent) {
 }
 
 document.addEventListener('shaka-ui-loaded', init1);
-document.addEventListener('shaka-ui-load-failed', init2);
+document.addEventListener('shaka-ui-load-failed', initFailed);
+document.addEventListener('shaka-ui-loaded', init2);
+
 document.addEventListener('shaka-ui-loaded', init3);
 
-document.addEventListener('shaka-ui-loaded', init4);
+ document.addEventListener('shaka-ui-loaded', init4);
+ document.addEventListener('shaka-ui-loaded', init4);
+document.addEventListener('shaka-ui-loaded', init6);
 
- document.addEventListener('shaka-ui-loaded', init5);
- document.addEventListener('shaka-ui-loaded', init6);
-document.addEventListener('shaka-ui-loaded', initSportstar2);
+document.addEventListener('shaka-ui-loaded', init7);
 
-document.addEventListener('shaka-ui-loaded', initSportstar1);
-
- document.addEventListener('shaka-ui-loaded', initRcti1);
+ document.addEventListener('shaka-ui-loaded', init8);
  document.addEventListener('shaka-ui-loaded', init9);
 document.addEventListener('shaka-ui-loaded', init10);
-document.addEventListener('shaka-ui-loaded', initRcti);
+document.addEventListener('shaka-ui-loaded', init11);
 document.addEventListener('shaka-ui-loaded', init12);
 
 document.addEventListener('shaka-ui-loaded', init13);
