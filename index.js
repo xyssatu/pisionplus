@@ -10,7 +10,7 @@ let punya_rcti = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_das
 
 
 async function initSportstar2() {
-  const video = document.getElementById('rcti');
+  const video = document.getElementById('sportstar2');
   const ui = video['ui'];
   const config = {
     'seekBarColors': {
