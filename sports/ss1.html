@@ -11,23 +11,6 @@
 <link rel='stylesheet' href='https://reisyah.github.io/ngopy/shakacontrol.css' crossorigin='anonymous'/>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/gaya.css' crossorigin='anonymous'/>
 </head>
-
- <script> 
-        function getParameterByName(name) {
-            name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
-            var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
-                results = regex.exec(location.search);
-            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-        }
-
-        var punya_lsbtv = getParameterByName('lsbtv');
-        var keyid = getParameterByName('keyid');
-        var key = getParameterByName('key');
-        var getIMG = getParameterByName('img');
-        var getRASIO = getParameterByName('rasio');
-      var gons = getParameterByName('ns');
-    
-  </script>
 	
 <body bgcolor='black' style='margin:0' oncontextmenu='return false' onkeydown='return false' onmousedown='return false'>
 <div id="vidio" data-shaka-player-container style='position:absolute;z-index: -1;top: 0;left: 0;width: 100%; height: 100%;object-fit:fill cover;'>
