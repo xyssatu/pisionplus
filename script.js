@@ -9,7 +9,7 @@ let punya_musictv = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchann
 let punya_rcti = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 
 
-async function initInit1() {
+async function init1() {
   const video = document.getElementById('sportstar2');
   const ui = video['ui'];
   const config = {
@@ -48,7 +48,7 @@ async function initInit1() {
 
 
 
-async function initInit2() {
+async function init2() {
   const video = document.getElementById('sportstar3');
   const ui = video['ui'];
   const config = {
@@ -83,7 +83,7 @@ async function initInit2() {
   }
 }
 
-async function initInit3() {
+async function init3() {
   const video = document.getElementById('sportstar4');
   const ui = video['ui'];
   const config = {
@@ -119,7 +119,7 @@ async function initInit3() {
 }
 
 
-async function initInit4() {
+async function init4() {
   const video = document.getElementById('oktv');
   const ui = video['ui'];
   const config = {
@@ -158,7 +158,7 @@ async function initInit4() {
 
 
 
-async function initInit5() {
+async function init5() {
   const video = document.getElementById('soccerch');
   const ui = video['ui'];
   const config = {
@@ -194,7 +194,7 @@ async function initInit5() {
 }
 
 
-async function initInit6() {
+async function init6() {
   const video = document.getElementById('sportstar1');
   const ui = video['ui'];
   const config = {
