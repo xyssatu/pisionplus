@@ -332,8 +332,8 @@ async function init9() {
       }
     }
   });
- player.configure('manifest.dash.ignoreMinBufferTime', true);
-  player.configure('streaming.rebufferingGoal', 1 /* second */);
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
   window.player = player;
   window.ui = ui;
 
@@ -347,6 +347,111 @@ async function init9() {
   }
 }
 
+async function init10() {
+  const video = document.getElementById('mnctv');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '828e0aba9825c3546a2831e4c0c36f7f': 'f85d3dcd38981368ab3da597e97ebdcc'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(mnctv);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+async function init11() {
+  const video = document.getElementById('gtv');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '88f6c7cbd793374cb5f12d7e26dcd63b': 'e82daa7c7bfb03d99327463fdbd37336'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(gtv);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+async function init12() {
+  const video = document.getElementById('inews');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        'a31cf5136789514b7e12b9cc99307c84': '980e54d671ffc2b2f4cf54e75cae0ac2'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(inews);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
 
 
 
