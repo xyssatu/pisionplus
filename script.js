@@ -1,12 +1,12 @@
-let soccerch = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
-let sportstar3hd = 'https://pisionplus.xyssatu.workers.dev/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
-let sportstar3 = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
-let sportstar4 = 'https://pisionplus.xyssatu.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
-let sportstar2 = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
-let sportstar1 = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
-let oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
-let musictv = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
-let rcti = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let soccerch = 'https://alpukat-live-cdn.mncnow.id/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
+let sportstar3hd = 'https://alpukat-live-cdn.mncnow.id/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
+let sportstar3 = 'https://alpukat-live-cdn.mncnow.id/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+let sportstar4 = 'https://alpukat-live-cdn.mncnow.id/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+let sportstar2 = 'https://alpukat-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let sportstar1 = 'https://alpukat-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+let oktv = 'https://alpukat-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+let musictv = 'https://alpukat-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+let rcti = 'https://alpukat-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 
 
 async function init1() {
@@ -365,6 +365,6 @@ function changeSourceOktv() {
 }
 
 function changeSourceMusictv() {
-  punya_oketv = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+  punya_oketv = 'https://pisionplus.xyssatu.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
   initMusictv();
 }
