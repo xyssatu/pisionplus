@@ -23,6 +23,9 @@ let transtv = 'https://alpukat-live-cdn.mncnow.id/live/eds/TransTV-2/sa_dash_vmx
 let antv = 'https://alpukat-live-cdn.mncnow.id/live/eds/ANTV/sa_dash_vmx/ANTV.mpd';
 let tvone = 'https://alpukat-live-cdn.mncnow.id/live/eds/TVOne/sa_dash_vmx/TVOne.mpd ';
 let metrotv = 'https://alpukat-live-cdn.mncnow.id/live/eds/Metro-TV2/sa_dash_vmx/Metro-TV2.mpd';
+let tvri = 'https://alpukat-live-cdn.mncnow.id/live/eds/PemersatuBangsa/sa_dash_vmx/PemersatuBangsa.mpd';
+let kompas = 'https://alpukat-live-cdn.mncnow.id/live/eds/KompasTV/sa_dash_vmx/KompasTV.mpd';
+let rtv = 'https://alpukat-live-cdn.mncnow.id/live/eds/RTV/sa_dash_vmx/RTV.mpd';
 
 
 
@@ -781,6 +784,20 @@ function ganti_metrotv() {
   init17();
 }
 
+function ganti_tvri() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/PemersatuBangsa/sa_dash_vmx/PemersatuBangsa.mpd';
+  init18();
+}
+
+function ganti_kompas() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/KompasTV/sa_dash_vmx/KompasTV.mpd';
+  init19();
+}
+
+function ganti_rtv() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/RTV/sa_dash_vmx/RTV.mpd';
+  init20();
+}
 
 
 
