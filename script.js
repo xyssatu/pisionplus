@@ -18,6 +18,8 @@ let mnctv = 'https://alpukat-live-cdn.mncnow.id/live/eds/MNCTV-HD/sa_dash_vmx/MN
 let rcti = 'https://alpukat-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 let gtv = 'https://alpukat-live-cdn.mncnow.id/live/eds/GTV-HD/sa_dash_vmx/GTV-HD.mpd';
 let inews = 'https://alpukat-live-cdn.mncnow.id/live/eds/iNewsTV-HDD/sa_dash_vmx/iNewsTV-HDD.mpd';
+let trans7 = 'https://alpukat-live-cdn.mncnow.id/live/eds/Trans7-2/sa_dash_vmx/Trans7-2.mpd';
+let transtv = 'https://alpukat-live-cdn.mncnow.id/live/eds/TransTV-2/sa_dash_vmx/TransTV-2.mpd';
 
 
 
@@ -573,6 +575,15 @@ function ganti_inews() {
   init12();
 }
 
+function ganti_trans7() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/Trans7-2/sa_dash_vmx/Trans7-2.mpd';
+  init13();
+}
+
+function ganti_transtv() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/TransTV-2/sa_dash_vmx/TransTV-2.mpd';
+  init14();
+}
 
 
 
