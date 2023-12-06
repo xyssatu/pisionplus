@@ -19,7 +19,7 @@ let rcti = 'https://alpukat-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI
 
 //SPORTS
 async function init1() {
-  const video = document.getElementById('sportstar2');
+  const video = document.getElementById('ss1');
   const ui = video['ui'];
   const config = {
     'seekBarColors': {
@@ -46,7 +46,7 @@ async function init1() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(rcti);
+    await player.load(ss1);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -54,11 +54,8 @@ async function init1() {
 }
 
 
-
-
-
 async function init2() {
-  const video = document.getElementById('sportstar3');
+  const video = document.getElementById('ss2');
   const ui = video['ui'];
   const config = {
     'seekBarColors': {
@@ -77,23 +74,59 @@ async function init2() {
       }
     }
   });
- player.configure('manifest.dash.ignoreMinBufferTime', true);
- player.configure('streaming.rebufferingGoal', 1 /* second */);
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+ //player.configure('streaming.rebufferingGoal', 1 /* second */);
   window.player = player;
   window.ui = ui;
 
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(sportstar3);
+    await player.load(ss2);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
   }
 }
 
+
 async function init3() {
-  const video = document.getElementById('sportstar4');
+  const video = document.getElementById('ss3');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        'fadd2720deff5925ab86df0819cd7775': 'f67ff08c7ebc779f6a6fcfc83835f65b'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+ //player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(ss3);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+async function init4() {
+  const video = document.getElementById('ss4');
   const ui = video['ui'];
   const config = {
     'seekBarColors': {
@@ -112,58 +145,20 @@ async function init3() {
       }
     }
   });
- player.configure('manifest.dash.ignoreMinBufferTime', true);
-  player.configure('streaming.rebufferingGoal', 1 /* second */);
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+  //player.configure('streaming.rebufferingGoal', 1 /* second */);
   window.player = player;
   window.ui = ui;
 
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(sportstar4);
+    await player.load(ss4);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
   }
 }
-
-
-async function init4() {
-  const video = document.getElementById('oktv');
-  const ui = video['ui'];
-  const config = {
-    'seekBarColors': {
-      base: 'blue',
-      buffered: 'red',
-      played: 'yellow',
-    }
-  };
-  ui.configure(config);
-  const controls = ui.getControls();
-  const player = controls.getPlayer();
-  player.configure({
-    drm: {
-      clearKeys: {
-        '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7'
-      }
-    }
-  });
-  player.configure('manifest.dash.ignoreMinBufferTime', true);
-  player.configure('streaming.rebufferingGoal', 1 /* second */);
-  window.player = player;
-  window.ui = ui;
-
-  player.addEventListener('error', onPlayerErrorEvent);
-  controls.addEventListener('error', onUIErrorEvent);
-  try {
-    await player.load(oktv);
-    console.log('The video has now been loaded!');
-  } catch (error) {
-    onPlayerError(error);
-  }
-}
-
-
 
 
 
@@ -187,8 +182,8 @@ async function init5() {
       }
     }
   });
-  player.configure('manifest.dash.ignoreMinBufferTime', true);
-  player.configure('streaming.rebufferingGoal', 1 /* second */);
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+  //player.configure('streaming.rebufferingGoal', 1 /* second */);
   window.player = player;
   window.ui = ui;
 
@@ -202,9 +197,8 @@ async function init5() {
   }
 }
 
-
 async function init6() {
-  const video = document.getElementById('sportstar1');
+  const video = document.getElementById('spotv');
   const ui = video['ui'];
   const config = {
     'seekBarColors': {
@@ -223,20 +217,94 @@ async function init6() {
       }
     }
   });
- player.configure('manifest.dash.ignoreMinBufferTime', true);
- player.configure('streaming.rebufferingGoal', 1 /* second */);
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+// player.configure('streaming.rebufferingGoal', 1 /* second */);
   window.player = player;
   window.ui = ui;
 
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(sportstar1);
+    await player.load(spotv);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
   }
 }
+
+async function init7() {
+  const video = document.getElementById('spotv2');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        'fadd2720deff5925ab86df0819cd7775': 'f67ff08c7ebc779f6a6fcfc83835f65b'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+// player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(spotv2);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+async function init8() {
+  const video = document.getElementById('fight');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        'fadd2720deff5925ab86df0819cd7775': 'f67ff08c7ebc779f6a6fcfc83835f65b'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+// player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(fight);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+//LOKAL
+
 async function init7() {
   const video = document.getElementById('rcti');
   const ui = video['ui'];
@@ -335,44 +403,45 @@ document.addEventListener('shaka-ui-loaded', init27);
  document.addEventListener('shaka-ui-loaded', init29);
 
 
-//pisionplus5 tidak ada
-function changeSourceSoccerch() {
-  punya_soccerch = 'https://lsbplus.pisionpluss1.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
-  initSoccerch();
+//SPORT
+
+function ganti_ss1() {
+  ss1 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  init1();
 }
-function changeSourceSportstar2() {
-  punyarcti = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
-  initRcti();
+function ganti_ss2() {
+  ss2 = 'https://lsbplus.pisionpluss4.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+  init2();
 }
 
-function changeSourceRcti1() {
-  punya_rcti1 = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
-  initRcti1();
+function ganti_ss3() {
+  ss3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  init3();
+}
+function ganti_ss4() {
+  ss4 = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+  init4();
+}
+function ganti_soccerch() {
+  soccerch = 'https://lsbplus.pisionpluss1.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
+  init5();
+}
+function ganti_spotv() {
+  spotv = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  init6();
 }
 
-function changeSourceSportstar1() {
-  punya_sportstar3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
-  initSportstar1();
-}
-function changeSourceSportstar22() {
-  punya_sportstar4 = 'https://lsbplus.pisionpluss4.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
-  initSportstar2();
+function ganti_spotv2() {
+  spotv = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  init7();
 }
 
-function changeSourceSportstar3() {
-  punya_sportstar3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
-  initSportstar3();
-}
-function changeSourceSportstar4() {
-  punya_sportstar4 = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
-  initSportstar4();
+function ganti_fight() {
+  fight = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+  init8();
 }
 
-function changeSourceOktv() {
-  punya_oketv = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
-  initOktv();
-}
-
+//LOKAL
 function changeSourceMusictv() {
   punya_oketv = 'https://pisionplus.xyssatu.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
   initMusictv();
