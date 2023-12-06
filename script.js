@@ -1,12 +1,12 @@
-let punya_soccerch = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
-let punya_sportstar3hd = 'https://pisionplus.xyssatu.workers.dev/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
-let punya_sportstar3 = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
-let punya_sportstar4 = 'https://pisionplus.xyssatu.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
-let punya_sportstar2 = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
-let punya_sportstar1 = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
-let punya_oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
-let punya_musictv = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
-let punya_rcti = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let soccerch = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
+let sportstar3hd = 'https://pisionplus.xyssatu.workers.dev/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
+let sportstar3 = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+let sportstar4 = 'https://pisionplus.xyssatu.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+let sportstar2 = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let sportstar1 = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+let oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+let musictv = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+let rcti = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 
 
 async function init1() {
@@ -37,7 +37,7 @@ async function init1() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punya_rcti);
+    await player.load(rcti);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -76,7 +76,7 @@ async function init2() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punya_sportstar3);
+    await player.load(sportstar3);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -111,7 +111,7 @@ async function init3() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punya_sportstar4);
+    await player.load(sportstar4);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -147,7 +147,7 @@ async function init4() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punya_oktv);
+    await player.load(oktv);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -186,7 +186,7 @@ async function init5() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punya_soccerch);
+    await player.load(soccerch);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -222,12 +222,49 @@ async function init6() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punya_sportstar1);
+    await player.load(sportstar1);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
   }
 }
+async function init7() {
+  const video = document.getElementById('rcti');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        'b81b1942c65f35547ced1bff074206a5': 'a07dc4d86f51db7195f4b7e2abe9d9e8'
+      }
+    }
+  });
+ player.configure('manifest.dash.ignoreMinBufferTime', true);
+  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(rcti);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+
 
 function onPlayerErrorEvent(errorEvent) {
   onPlayerError(event.detail);
