@@ -276,7 +276,7 @@ function changeSourceSportstar2() {
 }
 
 function changeSourceSportstar3() {
-  punya_sportstar3 = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  punya_sportstar3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
   initSportstar3();
 }
 function changeSourceSportstar4() {
