@@ -20,6 +20,9 @@ let gtv = 'https://alpukat-live-cdn.mncnow.id/live/eds/GTV-HD/sa_dash_vmx/GTV-HD
 let inews = 'https://alpukat-live-cdn.mncnow.id/live/eds/iNewsTV-HDD/sa_dash_vmx/iNewsTV-HDD.mpd';
 let trans7 = 'https://alpukat-live-cdn.mncnow.id/live/eds/Trans7-2/sa_dash_vmx/Trans7-2.mpd';
 let transtv = 'https://alpukat-live-cdn.mncnow.id/live/eds/TransTV-2/sa_dash_vmx/TransTV-2.mpd';
+let antv = 'https://alpukat-live-cdn.mncnow.id/live/eds/ANTV/sa_dash_vmx/ANTV.mpd';
+let tvone = 'https://alpukat-live-cdn.mncnow.id/live/eds/TVOne/sa_dash_vmx/TVOne.mpd ';
+let metrotv = 'https://alpukat-live-cdn.mncnow.id/live/eds/Metro-TV2/sa_dash_vmx/Metro-TV2.mpd';
 
 
 
@@ -525,11 +528,113 @@ async function init14() {
   }
 }
 
+async function init15() {
+  const video = document.getElementById('antv');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '4310edb8b9ffe79abb40bacafa778ec3': 'aebb7e86d8a336d9a93d3dd8a41153cf'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(antv);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+async function init16() {
+  const video = document.getElementById('tvone');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '90204c05545f95a262bb0d3ac45de870': '0e80f2a19fdf8da476bf695cd9570bb2'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(tvone);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
 
 
 
+async function init17() {
+  const video = document.getElementById('metrotv');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '4497473c5b978655ce62de7873e04174': '6af319f8d82351f8c3b18c9abdfdef4d'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
 
-
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(metrotv);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
 
 
 
@@ -660,6 +765,20 @@ function ganti_trans7() {
 function ganti_transtv() {
   fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/TransTV-2/sa_dash_vmx/TransTV-2.mpd';
   init14();
+}
+function ganti_antv() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/ANTV/sa_dash_vmx/ANTV.mpd';
+  init15();
+}
+
+function ganti_tvone() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/TVOne/sa_dash_vmx/TVOne.mpd';
+  init16();
+}
+
+function ganti_metrotv() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Metro-TV2/sa_dash_vmx/Metro-TV2.mpd';
+  init17();
 }
 
 
