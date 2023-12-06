@@ -46,40 +46,7 @@ async function initSportstar2() {
 
 
 
-async function initSportstar1() {
-  const video = document.getElementById('sportstar1');
-  const ui = video['ui'];
-  const config = {
-    'seekBarColors': {
-      base: 'blue',
-      buffered: 'red',
-      played: 'yellow',
-    }
-  };
-  ui.configure(config);
-  const controls = ui.getControls();
-  const player = controls.getPlayer();
-  player.configure({
-    drm: {
-      clearKeys: {
-        'fadd2720deff5925ab86df0819cd7775': 'f67ff08c7ebc779f6a6fcfc83835f65b'
-      }
-    }
-  });
- player.configure('manifest.dash.ignoreMinBufferTime', true);
- player.configure('streaming.rebufferingGoal', 1 /* second */);
-  window.player = player;
-  window.ui = ui;
 
-  player.addEventListener('error', onPlayerErrorEvent);
-  controls.addEventListener('error', onUIErrorEvent);
-  try {
-    await player.load(punya_sportstar1);
-    console.log('The video has now been loaded!');
-  } catch (error) {
-    onPlayerError(error);
-  }
-}
 
 async function initSportstar3() {
   const video = document.getElementById('sportstar3');
@@ -226,6 +193,41 @@ async function initSoccerch() {
   }
 }
 
+
+async function initSportstar1() {
+  const video = document.getElementById('sportstar1');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        'fadd2720deff5925ab86df0819cd7775': 'f67ff08c7ebc779f6a6fcfc83835f65b'
+      }
+    }
+  });
+ player.configure('manifest.dash.ignoreMinBufferTime', true);
+ player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(punya_sportstar1);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
 
 function onPlayerErrorEvent(errorEvent) {
   onPlayerError(event.detail);
