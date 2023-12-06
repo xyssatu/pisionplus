@@ -26,6 +26,8 @@ let metrotv = 'https://alpukat-live-cdn.mncnow.id/live/eds/Metro-TV2/sa_dash_vmx
 let tvri = 'https://alpukat-live-cdn.mncnow.id/live/eds/PemersatuBangsa/sa_dash_vmx/PemersatuBangsa.mpd';
 let kompas = 'https://alpukat-live-cdn.mncnow.id/live/eds/KompasTV/sa_dash_vmx/KompasTV.mpd';
 let rtv = 'https://alpukat-live-cdn.mncnow.id/live/eds/RTV/sa_dash_vmx/RTV.mpd';
+let net = 'https://alpukat-live-cdn.mncnow.id/live/eds/NetTV-HD/sa_dash_vmx/NetTV-HD.mpd';
+
 
 
 
@@ -747,6 +749,42 @@ async function init20() {
   }
 }
 
+async function init21() {
+  const video = document.getElementById('net');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '6b7bbcf1d511a56e6b3ceda392e4fa33': 'd1766244d7c1c44efd4c67aafae3ee7b'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(net);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
 
 
 
@@ -905,6 +943,11 @@ function ganti_kompas() {
 function ganti_rtv() {
   fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/RTV/sa_dash_vmx/RTV.mpd';
   init20();
+}
+
+function ganti_net() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/NetTV-HD/sa_dash_vmx/NetTV-HD.mpd';
+  init21();
 }
 
 
