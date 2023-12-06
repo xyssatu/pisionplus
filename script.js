@@ -455,6 +455,83 @@ async function init12() {
   }
 }
 
+async function init13() {
+  const video = document.getElementById('trans7');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '26bd60e03bbed7819eea0b27075a1897': 'd221ba6a6ab66e3083c001d2c4a3e5c5'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(trans7);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+async function init14() {
+  const video = document.getElementById('transtv');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '334950781f60a66f5e58324b70ac675d': '73caca97be8999ce9cfeb3babad8669d'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(transtv);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+
+
+
+
+
+
 
 
 function onPlayerErrorEvent(errorEvent) {
