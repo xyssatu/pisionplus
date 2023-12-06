@@ -289,7 +289,7 @@ document.addEventListener('shaka-ui-loaded', init2);
 document.addEventListener('shaka-ui-loaded', init3);
 
  document.addEventListener('shaka-ui-loaded', init4);
- document.addEventListener('shaka-ui-loaded', init4);
+ document.addEventListener('shaka-ui-loaded', init5);
 document.addEventListener('shaka-ui-loaded', init6);
 
 document.addEventListener('shaka-ui-loaded', init7);
