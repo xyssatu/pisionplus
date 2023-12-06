@@ -406,38 +406,38 @@ document.addEventListener('shaka-ui-loaded', init27);
 //SPORT
 
 function ganti_ss1() {
-  ss1 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  ss1 = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCSports-HD/sa_dash_vmx/MNCSports-HD.mpd';
   init1();
 }
 function ganti_ss2() {
-  ss2 = 'https://lsbplus.pisionpluss4.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+  ss2 = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCSports2-HD/sa_dash_vmx/MNCSports2-HD.mpd';
   init2();
 }
 
 function ganti_ss3() {
-  ss3 = 'https://lsbplus.pisionpluss3.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  ss3 = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
   init3();
 }
 function ganti_ss4() {
-  ss4 = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+  ss4 = 'https://pisionplus.xyssatu.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
   init4();
 }
 function ganti_soccerch() {
-  soccerch = 'https://lsbplus.pisionpluss1.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
+  soccerch = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
   init5();
 }
 function ganti_spotv() {
-  spotv = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  spotv = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
   init6();
 }
 
 function ganti_spotv2() {
-  spotv = 'https://lsbplus.pisionpluss2.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  spotv = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
   init7();
 }
 
 function ganti_fight() {
-  fight = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/FightSports/sa_dash_vmx/FightSports.mpd';
   init8();
 }
 
