@@ -14,8 +14,15 @@ let fight= 'https://alpukat-live-cdn.mncnow.id/live/eds/FightSports/sa_dash_vmx/
 
 //LOKAL
 let oktv = 'https://alpukat-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
-let musictv = 'https://alpukat-live-cdn.mncnow.id/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
+let mnctv = 'https://alpukat-live-cdn.mncnow.id/live/eds/MNCTV-HD/sa_dash_vmx/MNCTV-HD.mpd';
 let rcti = 'https://alpukat-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let gtv = 'https://alpukat-live-cdn.mncnow.id/live/eds/GTV-HD/sa_dash_vmx/GTV-HD.mpd';
+let inews = 'https://alpukat-live-cdn.mncnow.id/live/eds/iNewsTV-HDD/sa_dash_vmx/iNewsTV-HDD.mpd';
+
+
+
+
+
 
 //SPORTS
 async function init1() {
@@ -321,7 +328,7 @@ async function init9() {
   player.configure({
     drm: {
       clearKeys: {
-        'b81b1942c65f35547ced1bff074206a5': 'a07dc4d86f51db7195f4b7e2abe9d9e8'
+        '9ba3e153ef8956d6e2b0684fcf74f58f': 'dbc28cb5c6426080f984a5b6d436bb30'
       }
     }
   });
@@ -442,7 +449,34 @@ function ganti_fight() {
 }
 
 //LOKAL
-function changeSourceMusictv() {
-  punya_oketv = 'https://pisionplus.xyssatu.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
-  initMusictv();
+function ganti_rcti() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  init9();
 }
+
+function ganti_mnctv() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCTV-HD/sa_dash_vmx/MNCTV-HD.mpd';
+  init10();
+}
+function ganti_gtv() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/GTV-HD/sa_dash_vmx/GTV-HD.mpd';
+  init11();
+}
+
+function ganti_inews() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/iNewsTV-HDD/sa_dash_vmx/iNewsTV-HDD.mpd';
+  init12();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
