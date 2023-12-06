@@ -29,6 +29,18 @@ let rtv = 'https://alpukat-live-cdn.mncnow.id/live/eds/RTV/sa_dash_vmx/RTV.mpd';
 let net = 'https://alpukat-live-cdn.mncnow.id/live/eds/NetTV-HD/sa_dash_vmx/NetTV-HD.mpd';
 
 
+//MOVIES
+let tvn_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
+let fmn = 'https://alpukat-live-cdn.mncnow.id/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+let hits_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+let imc = 'https://alpukat-live-cdn.mncnow.id/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
+let galaxy = 'https://alpukat-live-cdn.mncnow.id/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+let galaxy_premium = 'https://alpukat-live-cdn.mncnow.id/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+let thrill = 'https://alpukat-live-cdn.mncnow.id/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
+let cinemaword = 'https://alpukat-live-cdn.mncnow.id/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+let celestial_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+
+
 
 
 
@@ -784,6 +796,336 @@ async function init21() {
   }
 }
 
+//MOVIES
+
+async function init22() {
+  const video = document.getElementById('tvn_movies');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '45c004003b09719751adb885d28d491f': 'fe82bc3ffe00477c833812fae74caed7'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(tvn_movies);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+async function init23() {
+  const video = document.getElementById('fmn');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '009a1278e0755ed82e70df01460e90c3': '12d010a918431785676c4fd63ef648bd'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(fmn);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+
+async function init24() {
+  const video = document.getElementById('hits_movies');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '5d9684b1737e3b68801b4cff7225d4bb': '902e7634820c26a8ff36f3708f0191d4'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(hits_movies);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+async function init25() {
+  const video = document.getElementById('imc');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '1a551e30ef88a5a121dcea6a74a3aee7': 'b0f3de006d6e31e967a5bc41be086e64'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(imc);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+async function init26() {
+  const video = document.getElementById('galaxy');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        'e5c40292f8d01b1d5f0c6b3904d73104': 'bcb2ac12e11c69594ba217bfe8714efe'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(galaxy);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+
+async function init27() {
+  const video = document.getElementById('galaxy_premium');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '7bc29ff5f405dff971e3a326223fe26c': '06849a953a38da997b31bacf433cc74a'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(galaxy_premium);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+
+async function init28() {
+  const video = document.getElementById('thrill');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '06e7e95fdb30086d24111f300c9d91f1': '9431050f760f692bfd396bbd84cb5161'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(thrill);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+
+async function init29() {
+  const video = document.getElementById('cinemaworld');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '958df746f24f371dffc95e7cd714fbd7': 'fbd6e4540b9a917a27da8be01542f53f'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(cinemaworld);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+
+async function init30() {
+  const video = document.getElementById('celestial_movies');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '13aecb26aeee22bc86920045f22d134d': '80aa44d998c7c0cc221c96d26730fe9b'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(celestial_movies);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
 
 
 
@@ -951,9 +1293,51 @@ function ganti_net() {
 }
 
 
+//MOVIES
 
+function ganti_tvn_movies() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
+  init22();
+}
 
+function ganti_fmn() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+  init23();
+}
 
+function ganti_hits_movies() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+  init24();
+}
+function ganti_imc() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/Galaxy-HD/sa_dash_vmx/Galaxy-HD.mpd';
+  init25();
+}
+
+function ganti_galaxy() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+  init26();
+}
+
+function ganti_galaxy_premium() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+  init27();
+}
+
+function ganti_thrill() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
+  init28();
+}
+
+function ganti_cinemaworld() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+  init29();
+}
+
+function ganti_hits_celestial_movies() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+  init30();
+}
 
 
 
