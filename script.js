@@ -49,8 +49,12 @@ let cinemachi_max = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Max-H
 let cinemachi_xtra = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Xtra-HD/sa_dash_vmx/Cinemachi-Xtra-HD.mpd';
 let my_cinema = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema/sa_dash_vmx/MyCinema.mpd';
 let my_cinema_asia = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
+let my_family = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
 
-
+//entertainment
+let my_tvn = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
+let my_hits = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
+let musictv = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
 
 
 
@@ -1756,6 +1760,34 @@ document.addEventListener('shaka-ui-loaded', init27);
 
  document.addEventListener('shaka-ui-loaded', init28);
  document.addEventListener('shaka-ui-loaded', init29);
+document.addEventListener('shaka-ui-loaded', init30);
+document.addEventListener('shaka-ui-loaded', init31);
+document.addEventListener('shaka-ui-loaded', init32);
+
+document.addEventListener('shaka-ui-loaded', init33);
+
+ document.addEventListener('shaka-ui-loaded', init34);
+ document.addEventListener('shaka-ui-loaded', init55);
+document.addEventListener('shaka-ui-loaded', init36);
+
+document.addEventListener('shaka-ui-loaded', init37);
+
+ document.addEventListener('shaka-ui-loaded', init38);
+ document.addEventListener('shaka-ui-loaded', init39);
+document.addEventListener('shaka-ui-loaded', init40);
+document.addEventListener('shaka-ui-loaded', init41);
+document.addEventListener('shaka-ui-loaded', init42);
+
+document.addEventListener('shaka-ui-loaded', init43);
+
+ document.addEventListener('shaka-ui-loaded', init44);
+ document.addEventListener('shaka-ui-loaded', init45);
+document.addEventListener('shaka-ui-loaded', init46);
+
+document.addEventListener('shaka-ui-loaded', init47);
+
+ document.addEventListener('shaka-ui-loaded', init48);
+ document.addEventListener('shaka-ui-loaded', init49);
 
 
 //SPORT
@@ -1787,7 +1819,7 @@ function ganti_spotv() {
 }
 
 function ganti_spotv2() {
-  spotv = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  spotv2 = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
   init7();
 }
 
@@ -1798,65 +1830,65 @@ function ganti_fight() {
 
 //LOKAL
 function ganti_rcti() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+  rcti = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
   init9();
 }
 
 function ganti_mnctv() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCTV-HD/sa_dash_vmx/MNCTV-HD.mpd';
+  mnctv = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCTV-HD/sa_dash_vmx/MNCTV-HD.mpd';
   init10();
 }
 function ganti_gtv() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/GTV-HD/sa_dash_vmx/GTV-HD.mpd';
+  gtv = 'https://pisionplus.xyssatu.workers.dev/live/eds/GTV-HD/sa_dash_vmx/GTV-HD.mpd';
   init11();
 }
 
 function ganti_inews() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/iNewsTV-HDD/sa_dash_vmx/iNewsTV-HDD.mpd';
+  inews = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/iNewsTV-HDD/sa_dash_vmx/iNewsTV-HDD.mpd';
   init12();
 }
 
 function ganti_trans7() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/Trans7-2/sa_dash_vmx/Trans7-2.mpd';
+  trans7 = 'https://pisionplus.xyssatu.workers.dev/live/eds/Trans7-2/sa_dash_vmx/Trans7-2.mpd';
   init13();
 }
 
 function ganti_transtv() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/TransTV-2/sa_dash_vmx/TransTV-2.mpd';
+  transtv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/TransTV-2/sa_dash_vmx/TransTV-2.mpd';
   init14();
 }
 function ganti_antv() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/ANTV/sa_dash_vmx/ANTV.mpd';
+  antv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/ANTV/sa_dash_vmx/ANTV.mpd';
   init15();
 }
 
 function ganti_tvone() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/TVOne/sa_dash_vmx/TVOne.mpd';
+  tvone = 'https://pisionplus.xyssatu.workers.dev/live/eds/TVOne/sa_dash_vmx/TVOne.mpd';
   init16();
 }
 
 function ganti_metrotv() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Metro-TV2/sa_dash_vmx/Metro-TV2.mpd';
+  metrotv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Metro-TV2/sa_dash_vmx/Metro-TV2.mpd';
   init17();
 }
 
 function ganti_tvri() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/PemersatuBangsa/sa_dash_vmx/PemersatuBangsa.mpd';
+  tvri = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/PemersatuBangsa/sa_dash_vmx/PemersatuBangsa.mpd';
   init18();
 }
 
 function ganti_kompas() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/KompasTV/sa_dash_vmx/KompasTV.mpd';
+  kompas = 'https://pisionplus.xyssatu.workers.dev/live/eds/KompasTV/sa_dash_vmx/KompasTV.mpd';
   init19();
 }
 
 function ganti_rtv() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/RTV/sa_dash_vmx/RTV.mpd';
+  rtv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/RTV/sa_dash_vmx/RTV.mpd';
   init20();
 }
 
 function ganti_net() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/NetTV-HD/sa_dash_vmx/NetTV-HD.mpd';
+  net = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/NetTV-HD/sa_dash_vmx/NetTV-HD.mpd';
   init21();
 }
 
@@ -1864,124 +1896,126 @@ function ganti_net() {
 //MOVIES
 
 function ganti_tvn_movies() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
+  tvn_movies = 'https://pisionplus.xyssatu.workers.dev/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
   init22();
 }
 
 function ganti_fmn() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+  fmn = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/FMN/sa_dash_vmx/FMN.mpd';
   init23();
 }
 
 function ganti_hits_movies() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+  hits_movies = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
   init24();
 }
 function ganti_imc() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/IndonesiaMovieChannels-HD/sa_dash_vmx/IndonesiaMovieChannels-HD.mpd';
+  imc = 'https://pisionplus.xyssatu.workers.dev/live/eds/IndonesiaMovieChannels-HD/sa_dash_vmx/IndonesiaMovieChannels-HD.mpd';
   init25();
 }
 
 function ganti_galaxy() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Galaxy-HD/sa_dash_vmx/Galaxy-HD.mpd';
+  galaxy = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Galaxy-HD/sa_dash_vmx/Galaxy-HD.mpd';
   init26();
 }
 
 function ganti_galaxy_premium() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/GalaxyPremium-HD/sa_dash_vmx/GalaxyPremium-HD.mpd';
+  galaxy_premium = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/GalaxyPremium-HD/sa_dash_vmx/GalaxyPremium-HD.mpd';
   init27();
 }
 
 function ganti_thrill() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/Thrill/sa_dash_vmx/Thrill.mpd';
+  thrill = 'https://pisionplus.xyssatu.workers.dev/live/eds/Thrill/sa_dash_vmx/Thrill.mpd';
   init28();
 }
 
 function ganti_cinemaworld() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CinemaWorld/sa_dash_vmx/CinemaWorld.mpd';
+  cinemaworld = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CinemaWorld/sa_dash_vmx/CinemaWorld.mpd';
   init29();
 }
 
-function ganti_hits_celestial_movies() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CelestialMovie/sa_dash_vmx/CelestialMovie.mpd';
+function ganti_celestial_movies() {
+  celectial_movies = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CelestialMovie/sa_dash_vmx/CelestialMovie.mpd';
   init30();
 }
 
 function ganti_celectial_clasic_movies() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
+  celectial_clasic_movies = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
   init31();
 }
 
 function ganti_zee_bioskop() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/ZeeBIOSKOP/sa_dash_vmx/ZeeBIOSKOP.mpd';
+  zee_bioskop = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/ZeeBIOSKOP/sa_dash_vmx/ZeeBIOSKOP.mpd';
   init32();
 }
 
 function ganti_axn() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/AXN/sa_dash_vmx/AXN.mpd';
+  axn = 'https://pisionplus.xyssatu.workers.dev/live/eds/AXN/sa_dash_vmx/AXN.mpd';
   init33();
 }
 
 function ganti_cinemachi() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-HD/sa_dash_vmx/Cinemachi-HD.mpd';
+  cinemachi = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-HD/sa_dash_vmx/Cinemachi-HD.mpd';
   init34();
 }
 
 function ganti_cinemachi_action() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+  cinemachi_action = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
   init35();
 }
 
 function ganti_cinemachi_kids() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Kids-HD/sa_dash_vmx/Cinemachi-Kids-HD.mpd';
+  cinemachi_kids = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Kids-HD/sa_dash_vmx/Cinemachi-Kids-HD.mpd';
   init36();
 }
 
 function ganti_cinemachi_max() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Max-HD/sa_dash_vmx/Cinemachi-Max-HD.mpd';
+  cinemachi_max = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Max-HD/sa_dash_vmx/Cinemachi-Max-HD.mpd';
   init37();
 }
 
 function ganti_cinemachi_xtra() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/Cinemachi-Xtra-HD/sa_dash_vmx/Cinemachi-Xtra-HD.mpd';
+  cinemachi_xtra = 'https://pisionplus.xyssatu.workers.dev/live/eds/Cinemachi-Xtra-HD/sa_dash_vmx/Cinemachi-Xtra-HD.mpd';
   init38();
 }
 
 function ganti_my_cinema() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/MyCinema/sa_dash_vmx/MyCinema.mpd';
+  my_cinema = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/MyCinema/sa_dash_vmx/MyCinema.mpd';
   init39();
 }
 
 function ganti_my_cinema_asia() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
+  my_cinema_asia = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
   init40();
 }
 
 
-function ganti_cinemachi_kids() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Kids-HD/sa_dash_vmx/Cinemachi-Kids-HD.mpd';
-  init36();
+function ganti_my_family() {
+  my_family = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Kids-HD/sa_dash_vmx/Cinemachi-Kids-HD.mpd';
+  init41();
 }
 
-function ganti_cinemachi_max() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Max-HD/sa_dash_vmx/Cinemachi-Max-HD.mpd';
+//entertainment
+
+function ganti_tvn() {
+  tvn = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Max-HD/sa_dash_vmx/Cinemachi-Max-HD.mpd';
   init37();
 }
 
-function ganti_cinemachi_xtra() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/Cinemachi-Xtra-HD/sa_dash_vmx/Cinemachi-Xtra-HD.mpd';
+function ganti_hits() {
+  hits = 'https://pisionplus.xyssatu.workers.dev/live/eds/Cinemachi-Xtra-HD/sa_dash_vmx/Cinemachi-Xtra-HD.mpd';
   init38();
 }
 
-function ganti_my_cinema() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/MyCinema/sa_dash_vmx/MyCinema.mpd';
+function ganti_musictv() {
+  musictv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/MyCinema/sa_dash_vmx/MyCinema.mpd';
   init39();
 }
 
 //kids
 
 function ganti_babytv() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  babytv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
   init45();
 }
 
