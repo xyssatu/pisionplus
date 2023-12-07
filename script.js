@@ -44,6 +44,11 @@ let zee_bioskop = 'https://alpukat-live-cdn.mncnow.id/live/eds/ZeeBIOSKOP/sa_das
 let axn = 'https://alpukat-live-cdn.mncnow.id/live/eds/AXN/sa_dash_vmx/AXN.mpd';
 let cinemachi = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-HD/sa_dash_vmx/Cinemachi-HD.mpd';
 let cinemachi_action = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+let cinemachi_kids = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+let cinemachi_max = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+let cinemachi_xtra = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+let my_cinema = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+let my_cinema_asia = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
 
 
 
@@ -1266,7 +1271,7 @@ async function init34() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(celestial_movies);
+    await player.load(cinemachi);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -1301,7 +1306,7 @@ async function init35() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(celestial_movies);
+    await player.load(cinemachi_action);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -1336,7 +1341,7 @@ async function init36() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(celestial_movies);
+    await player.load(cinemachi_kids);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -1345,7 +1350,7 @@ async function init36() {
 
 
 async function init37() {
-  const video = document.getElementById('cinemachi_action');
+  const video = document.getElementById('cinemachi_max');
   const ui = video['ui'];
   const config = {
     'seekBarColors': {
@@ -1360,7 +1365,7 @@ async function init37() {
   player.configure({
     drm: {
       clearKeys: {
-        'fba45325e2cd8355972ede4981f43b2a': 'd88a4bdd67f89cd21eb074c81de1b994'
+        '6c256f70830647e4bdf654d86e710ed5': 'fe41e9bcbae52f9d233407f7488bca5f'
       }
     }
   });
@@ -1372,7 +1377,7 @@ async function init37() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(celestial_movies);
+    await player.load(cinemachi_max);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -1380,7 +1385,7 @@ async function init37() {
 }
 
 async function init38() {
-  const video = document.getElementById('cinemachi_action');
+  const video = document.getElementById('cinemachi_xtra');
   const ui = video['ui'];
   const config = {
     'seekBarColors': {
@@ -1395,7 +1400,7 @@ async function init38() {
   player.configure({
     drm: {
       clearKeys: {
-        'fba45325e2cd8355972ede4981f43b2a': 'd88a4bdd67f89cd21eb074c81de1b994'
+        'b64eee6360b118d0d90329cc2c9e4c60': '4e97aa6422b26ffb372647dbd0a7683c'
       }
     }
   });
@@ -1407,7 +1412,7 @@ async function init38() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(celestial_movies);
+    await player.load(cinemachi_xtra);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -1415,7 +1420,7 @@ async function init38() {
 }
 
 async function init39() {
-  const video = document.getElementById('cinemachi_action');
+  const video = document.getElementById('my_cinema');
   const ui = video['ui'];
   const config = {
     'seekBarColors': {
@@ -1430,7 +1435,7 @@ async function init39() {
   player.configure({
     drm: {
       clearKeys: {
-        'fba45325e2cd8355972ede4981f43b2a': 'd88a4bdd67f89cd21eb074c81de1b994'
+        '4310edb8b9ffe79abb40bacafa778ec3': 'aebb7e86d8a336d9a93d3dd8a41153cf'
       }
     }
   });
@@ -1442,7 +1447,7 @@ async function init39() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(celestial_movies);
+    await player.load(my_cinema);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -1450,7 +1455,7 @@ async function init39() {
 }
 
 async function init40() {
-  const video = document.getElementById('cinemachi_action');
+  const video = document.getElementById('my_cinema_asia');
   const ui = video['ui'];
   const config = {
     'seekBarColors': {
@@ -1465,7 +1470,7 @@ async function init40() {
   player.configure({
     drm: {
       clearKeys: {
-        'fba45325e2cd8355972ede4981f43b2a': 'd88a4bdd67f89cd21eb074c81de1b994'
+        '4310edb8b9ffe79abb40bacafa778ec3': 'aebb7e86d8a336d9a93d3dd8a41153cf'
       }
     }
   });
@@ -1477,7 +1482,7 @@ async function init40() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(celestial_movies);
+    await player.load(my_cinema_asia);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -1723,4 +1728,30 @@ function ganti_cinemachi_action() {
   fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
   init35();
 }
+
+function ganti_cinemachi_kids() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
+  init36();
+}
+
+function ganti_cinemachi_max() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/ZeeBIOSKOP/sa_dash_vmx/ZeeBIOSKOP.mpd';
+  init37();
+}
+
+function ganti_cinemachi_xtra() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/AXN/sa_dash_vmx/AXN.mpd';
+  init38();
+}
+
+function ganti_my_cinema() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-HD/sa_dash_vmx/Cinemachi-HD.mpd';
+  init39();
+}
+
+function ganti_my_cinema_asia() {
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+  init40();
+}
+
 
