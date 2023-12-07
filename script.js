@@ -44,11 +44,11 @@ let zee_bioskop = 'https://alpukat-live-cdn.mncnow.id/live/eds/ZeeBIOSKOP/sa_das
 let axn = 'https://alpukat-live-cdn.mncnow.id/live/eds/AXN/sa_dash_vmx/AXN.mpd';
 let cinemachi = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-HD/sa_dash_vmx/Cinemachi-HD.mpd';
 let cinemachi_action = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
-let cinemachi_kids = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
-let cinemachi_max = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
-let cinemachi_xtra = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
-let my_cinema = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
-let my_cinema_asia = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+let cinemachi_kids = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Kids-HD/sa_dash_vmx/Cinemachi-Kids-HD.mpd';
+let cinemachi_max = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Max-HD/sa_dash_vmx/Cinemachi-Max-HD.mpd';
+let cinemachi_xtra = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-Xtra-HD/sa_dash_vmx/Cinemachi-Xtra-HD.mpd';
+let my_cinema = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema/sa_dash_vmx/MyCinema.mpd';
+let my_cinema_asia = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
 
 
 
@@ -1730,27 +1730,27 @@ function ganti_cinemachi_action() {
 }
 
 function ganti_cinemachi_kids() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Kids-HD/sa_dash_vmx/Cinemachi-Kids-HD.mpd';
   init36();
 }
 
 function ganti_cinemachi_max() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/ZeeBIOSKOP/sa_dash_vmx/ZeeBIOSKOP.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Max-HD/sa_dash_vmx/Cinemachi-Max-HD.mpd';
   init37();
 }
 
 function ganti_cinemachi_xtra() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/AXN/sa_dash_vmx/AXN.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/Cinemachi-Xtra-HD/sa_dash_vmx/Cinemachi-Xtra-HD.mpd';
   init38();
 }
 
 function ganti_my_cinema() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-HD/sa_dash_vmx/Cinemachi-HD.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/MyCinema/sa_dash_vmx/MyCinema.mpd';
   init39();
 }
 
 function ganti_my_cinema_asia() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
   init40();
 }
 
