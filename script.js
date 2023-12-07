@@ -60,6 +60,10 @@ let musictv = 'https://alpukat-live-cdn.mncnow.id/live/eds/MusicChannel/sa_dash_
 
 //kids
 let babytv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+let kidstv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+let babytv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+let kidstv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+let babytv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
 
 
 
@@ -1692,6 +1696,186 @@ async function init45() {
   }
 }
 
+async function init46() {
+  const video = document.getElementById('kidstv');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '17340c4223a4674b1b7da8d8d9e11174': '11a73aad2c75ddf338840b08fb915993'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(kidstv);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+async function init47() {
+  const video = document.getElementById('nickeloden');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '785024598882dc751652cea2bce44b8e': '56a40e58acd59965e865947dd719108d'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(nickeloden);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+async function init48() {
+  const video = document.getElementById('animax');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '6344a8272809245e3fa9d926099528c3': '93b6c4ff420c6864a6294f6d223d9b2c'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(animax);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+async function init49() {
+  const video = document.getElementById('cebebies');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '194891b41223a5f1ec2beff1c95e2f53': 'eeb1fb2ec011f9563653495f9ac427b1'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(cebebies);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
+
+async function init50() {
+  const video = document.getElementById('my_kids');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        'a2dd864fc95998efd52979e5f732e029': '4f705ca934ba3ef5513fea618d4f938d'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(my_kids);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
 
 
 
@@ -1999,17 +2183,17 @@ function ganti_my_family() {
 
 function ganti_tvn() {
   tvn = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/tvN/sa_dash_vmx/tvN.mpd';
-  init37();
+  init42();
 }
 
 function ganti_hits() {
   hits = 'https://pisionplus.xyssatu.workers.dev/live/eds/HITS/sa_dash_vmx/HITS.mpd';
-  init38();
+  init43();
 }
 
 function ganti_musictv() {
   musictv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd';
-  init39();
+  init44();
 }
 
 //kids
@@ -2017,6 +2201,29 @@ function ganti_musictv() {
 function ganti_babytv() {
   babytv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
   init45();
+}
+
+function ganti_kidstv() {
+  kidstv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  init46();
+}
+
+function ganti_nickeloden() {
+  nickeloden = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  init47();
+}
+function ganti_animax() {
+  animax = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  init48();
+}
+function ganti_cebebies() {
+  cebebies = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  init49();
+}
+
+function ganti_my_kids() {
+  my_kids = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  init50();
 }
 
 
