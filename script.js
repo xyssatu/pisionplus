@@ -60,10 +60,12 @@ let musictv = 'https://alpukat-live-cdn.mncnow.id/live/eds/MusicChannel/sa_dash_
 
 //kids
 let babytv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
-let kidstv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
-let babytv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
-let kidstv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
-let babytv = 'https://alpukat-live-cdn.mncnow.id/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+let kidstv = 'https://alpukat-live-cdn.mncnow.id/live/eds/KidsChannel/sa_dash_vmx/KidsChannel.mpd';
+let nickeloden = 'https://alpukat-live-cdn.mncnow.id/live/eds/Nickelodeon/sa_dash_vmx/Nickelodeon.mpd';
+let animax = 'https://alpukat-live-cdn.mncnow.id/live/eds/Animax/sa_dash_vmx/Animax.mpd';
+let my_kids = 'https://alpukat-live-cdn.mncnow.id/live/eds/My-Kids/sa_dash_vmx/My-Kids.mpd';
+let cebebies = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cbeebies/sa_dash_vmx/Cbeebies.mpd';
+let nick_jr = 'https://alpukat-live-cdn.mncnow.id/live/eds/NickJr-HDD/sa_dash_vmx/NickJr-HDD.mpd';
 
 
 
@@ -1875,7 +1877,40 @@ async function init50() {
   }
 }
 
+async function init51() {
+  const video = document.getElementById('nick_jr');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        'f71ca09f57ea09e27ee63d7d1f0d0e31': '8a07ef45b4a18973ef12f8da482dcec0'
+      }
+    }
+  });
+ //player.configure('manifest.dash.ignoreMinBufferTime', true);
+//  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
 
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(nick_jr);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
 
 
 
@@ -2204,16 +2239,16 @@ function ganti_babytv() {
 }
 
 function ganti_kidstv() {
-  kidstv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  kidstv = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/KidsChannel/sa_dash_vmx/KidsChannel.mpd';
   init46();
 }
 
 function ganti_nickeloden() {
-  nickeloden = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  nickeloden = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Nickelodeon/sa_dash_vmx/Nickelodeon.mpd';
   init47();
 }
 function ganti_animax() {
-  animax = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  animax = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Animax/sa_dash_vmx/Animax.mpd';
   init48();
 }
 function ganti_cebebies() {
@@ -2222,8 +2257,11 @@ function ganti_cebebies() {
 }
 
 function ganti_my_kids() {
-  my_kids = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+  my_kids = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/My-Kids/sa_dash_vmx/My-Kids.mpd';
   init50();
 }
-
+function ganti_nick_jr() {
+  nick_jr = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/NickJr-HDD/sa_dash_vmx/NickJr-HDD.mpd';
+  init51();
+}
 
