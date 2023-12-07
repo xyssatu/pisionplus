@@ -33,12 +33,12 @@ let net = 'https://alpukat-live-cdn.mncnow.id/live/eds/NetTV-HD/sa_dash_vmx/NetT
 let tvn_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
 let fmn = 'https://alpukat-live-cdn.mncnow.id/live/eds/FMN/sa_dash_vmx/FMN.mpd';
 let hits_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
-let imc = 'https://alpukat-live-cdn.mncnow.id/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
-let galaxy = 'https://alpukat-live-cdn.mncnow.id/live/eds/FMN/sa_dash_vmx/FMN.mpd';
-let galaxy_premium = 'https://alpukat-live-cdn.mncnow.id/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
-let thrill = 'https://alpukat-live-cdn.mncnow.id/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
-let cinemaword = 'https://alpukat-live-cdn.mncnow.id/live/eds/FMN/sa_dash_vmx/FMN.mpd';
-let celestial_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+let imc = 'https://alpukat-live-cdn.mncnow.id/live/eds/IndonesiaMovieChannels-HD/sa_dash_vmx/IndonesiaMovieChannels-HD.mpd';
+let galaxy = 'https://alpukat-live-cdn.mncnow.id/live/eds/Galaxy-HD/sa_dash_vmx/Galaxy-HD.mpd';
+let galaxy_premium = 'https://alpukat-live-cdn.mncnow.id/live/eds/GalaxyPremium-HD/sa_dash_vmx/GalaxyPremium-HD.mpd';
+let thrill = 'https://alpukat-live-cdn.mncnow.id/live/eds/Thrill/sa_dash_vmx/Thrill.mpd';
+let cinemaword = 'https://alpukat-live-cdn.mncnow.id/live/eds/CinemaWorld/sa_dash_vmx/CinemaWorld.mpd';
+let celestial_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/CelestialMovie/sa_dash_vmx/CelestialMovie.mpd';
 
 
 
@@ -1310,32 +1310,32 @@ function ganti_hits_movies() {
   init24();
 }
 function ganti_imc() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/Galaxy-HD/sa_dash_vmx/Galaxy-HD.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/IndonesiaMovieChannels-HD/sa_dash_vmx/IndonesiaMovieChannels-HD.mpd';
   init25();
 }
 
 function ganti_galaxy() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/Galaxy-HD/sa_dash_vmx/Galaxy-HD.mpd';
   init26();
 }
 
 function ganti_galaxy_premium() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/GalaxyPremium-HD/sa_dash_vmx/GalaxyPremium-HD.mpd';
   init27();
 }
 
 function ganti_thrill() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/Thrill/sa_dash_vmx/Thrill.mpd';
   init28();
 }
 
 function ganti_cinemaworld() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CinemaWorld/sa_dash_vmx/CinemaWorld.mpd';
   init29();
 }
 
 function ganti_hits_celestial_movies() {
-  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+  fight = 'https://pisionplus.xyssatu.workers.dev/live/eds/live/eds/CelestialMovie/sa_dash_vmx/CelestialMovie.mpd';
   init30();
 }
 
