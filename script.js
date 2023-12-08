@@ -360,6 +360,42 @@ async function init8() {
 
 //LOKAL
 
+async function init52() {
+  const video = document.getElementById('oktv');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7'
+      }
+    }
+  });
+  player.configure('manifest.dash.ignoreMinBufferTime', true);
+  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(oktv);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+
 async function init9() {
   const video = document.getElementById('rcti');
   const ui = video['ui'];
@@ -2263,5 +2299,10 @@ function ganti_my_kids() {
 function ganti_nick_jr() {
   nick_jr = 'https://pisionplus.xyssatu.workers.dev/live/eds/NickJr-HDD/sa_dash_vmx/NickJr-HDD.mpd';
   init51();
+}
+
+function ganti_oktv() {
+  nick_jr = 'https://pisionplus.xyssatu.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+  init52();
 }
 
