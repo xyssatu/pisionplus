@@ -39,7 +39,7 @@ let galaxy_premium = 'https://alpukat-live-cdn.mncnow.id/live/eds/GalaxyPremium-
 let thrill = 'https://alpukat-live-cdn.mncnow.id/live/eds/Thrill/sa_dash_vmx/Thrill.mpd';
 let cinemaword = 'https://alpukat-live-cdn.mncnow.id/live/eds/CinemaWorld/sa_dash_vmx/CinemaWorld.mpd';
 let celestial_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/CelestialMovie/sa_dash_vmx/CelestialMovie.mpd';
-let celectial_clasic_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
+let celestial_clasic_movies = 'https://alpukat-live-cdn.mncnow.id/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
 let zee_bioskop = 'https://alpukat-live-cdn.mncnow.id/live/eds/ZeeBIOSKOP/sa_dash_vmx/ZeeBIOSKOP.mpd';
 let axn = 'https://alpukat-live-cdn.mncnow.id/live/eds/AXN/sa_dash_vmx/AXN.mpd';
 let cinemachi = 'https://alpukat-live-cdn.mncnow.id/live/eds/Cinemachi-HD/sa_dash_vmx/Cinemachi-HD.mpd';
@@ -2044,6 +2044,10 @@ document.addEventListener('shaka-ui-loaded', init47);
  document.addEventListener('shaka-ui-loaded', init48);
  document.addEventListener('shaka-ui-loaded', init49);
 
+document.addEventListener('shaka-ui-loaded', init50);
+
+ document.addEventListener('shaka-ui-loaded', init51);
+ document.addEventListener('shaka-ui-loaded', init52);
 
 //SPORT
 
