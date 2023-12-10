@@ -2194,12 +2194,12 @@ function ganti_cinemaworld() {
 }
 
 function ganti_celestial_movies() {
-  celectial_movies = 'https://pisionplus.xyssatu.workers.dev/live/eds/CelestialMovie/sa_dash_vmx/CelestialMovie.mpd';
+  celestial_movies = 'https://pisionplus.xyssatu.workers.dev/live/eds/CelestialMovie/sa_dash_vmx/CelestialMovie.mpd';
   init30();
 }
 
-function ganti_celectial_clasic_movies() {
-  celectial_clasic_movies = 'https://pisionplus.xyssatu.workers.dev/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
+function ganti_celestial_clasic_movies() {
+  celestial_clasic_movies = 'https://pisionplus.xyssatu.workers.dev/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
   init31();
 }
 
