@@ -1,0 +1,151 @@
+   <!DOCTYPE html>
+   <html>
+   <head>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+   <meta name="referrer" content="no-referrer"/>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.3/shaka-player.ui.min.js' crossorigin='anonymous'></script>
+
+
+   <script src='https://player-95.pages.dev/shaka.js' > </script>
+     <script src='https://pisionplus.pages.dev/script.js'> </script>
+   <link rel='stylesheet' href='https://reisyah.github.io/ngopy/shakacontrol.css' crossorigin='anonymous'/>
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/gaya.css' crossorigin='anonymous'/>
+   </head>
+
+    <script> 
+           function getParameterByName(name) {
+               name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+               var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+                   results = regex.exec(location.search);
+               return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+           }
+
+           var punya_lsbtv = getParameterByName('lsbtv');
+           var keyid = getParameterByName('keyid');
+           var key = getParameterByName('key');
+           var getIMG = getParameterByName('img');
+           var getRASIO = getParameterByName('rasio');
+         var gons = getParameterByName('ns');
+
+     </script>
+
+   <body bgcolor='black' style='margin:0' oncontextmenu='return false' onkeydown='return false' onmousedown='return false'>
+   <div id="vidio" data-shaka-player-container style='position:absolute;z-index: -1;top: 0;left: 0;width: 100%; height: 100%;object-fit:fill cover;'>
+     <video autoplay data-shaka-player id='axn' poster="https://Arjunaaaaa.github.io/lsbtv/poster.jpg" style='width:100%;height:100%;'></video>
+     <div class="shaka-controls-container" shown="true">
+       <div class="shaka-scrim-container"></div>
+       <div class="shaka-play-buton-container">
+         <button class="shaka-play-button shaka-no-propagation" ion="pause" aria-abel="Pause"></button>
+       </div>
+       <div class="shaka-server-side-ad-container"></div>
+       <div class="shaka-bottom-controls shaka-no-propagation">
+         <div class="shaka-ad-controls shaka-hidden">
+           <div class="shaka-ad-position shaka-hidden">
+             <span class="shaka-ad-position-span"></span>
+           </div>
+           <div class="shaka-ad-counter">
+             <span class="shaka-ad-counter-span"></span>
+           </div>
+         </div>
+         <div class="shaka-controls-button-panel shaka-show-controls-on-mouse-over">
+         <img src="https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/logolsbtv.png" style='width:15% ;height:15%;' class="shaka-fullscreen-button material-icons-round shaka-tooltip" aria-label="mute">
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div id='fixedban' style='width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:;bottom:0;z-index:999;-webkit-transform:translateZ(0);'>
+   <div>
+   <a id='close-fixedban' onclick='document.getElementById("fixedban").style.display = "none";' style='cursor:pointer;'><img alt='close' src='https://1.bp.blogspot.com/-_A83iDM6JYc/VhtxROLILrI/AAAAAAAADK4/aM4ikIA6aqI/s1600/btn_close.gif' title='close button' style='vertical-align:middle;'/></a></div>
+   <div style='text-align:center;display:block;max-width:100%;height:auto;overflow:hidden;margin:auto'>
+       <center>
+       <fieldset class="btn0">
+     <legend class="btn1" >ASPEK RASIO</legend>
+   <button class="btn2" onclick="ganti_axn ()">EROR? COBA INI
+   </button>			
+    <button class="btn2" onclick="fill ()">FILL
+     <button class="btn2" onclick="fit ()">FIT
+    </button>
+     <a href="go:nsaxn" class="btn2" >OPEN NS PLAYER
+    </a>
+   </fieldset>
+
+       </center>
+     </div>
+       </div>
+   </div>
+   <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/fullscreen.js' crossorigin='anonymous'></script>
+   <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/aspekrasio.js' crossorigin='anonymous'></script>
+   <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/popupwindow.js' crossorigin='anonymous'></script>
+   <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/aspekrasio.js' crossorigin='anonymous'>
+   </script>
+     <script src='https://pisionplus.pages.dev/script.js'> </script>
+    <!-- STOP NYURI GA BAIK -->
+
+
+   <script> 
+   async function init() { 
+   const video = document.getElementById('video'); 
+   const ui = video['ui']; 
+   const config = {
+         'seekBarColors': {
+           base: 'blue',
+           buffered: 'red',
+           played: 'yellow',
+         }
+       }
+      ui.configure(config);
+   const controls = ui.getControls(); 
+   const player = controls.getPlayer(); 
+   player.configure({
+     drm: {
+       clearKeys: {
+      keyid : key
+       }
+     }
+   });
+   //player.configure({drm:{servers:{'com.widevine.alpha':'https://license.dstv.com/widevine/getLicense?CrmId=afl&AccountId=afl&ContentId=SH2&SessionId=D3C00F885C24B9C6&Ticket=C839A8D71AB94299'}}}); 
+
+   window.player = player; 
+   window.ui = ui; 
+
+   player.addEventListener('error', onPlayerErrorEvent); 
+   controls.addEventListener('error', onUIErrorEvent); 
+   try{await player.load(punya_lsbtv); 
+   console.log('The video has now been loaded!');} catch (error) {onPlayerError(error);}} 
+   function onPlayerErrorEvent(errorEvent) {onPlayerError(event.detail);} 
+   function onPlayerError(error) {console.error('Error code', error.code, 'object', error);} 
+   function onUIErrorEvent(errorEvent) {onPlayerError(event.detail);} 
+   function initFailed(errorEvent) {console.error('Unable to load the UI library!');} 
+   document.addEventListener('shaka-ui-loaded', init); 
+   document.addEventListener('shaka-ui-load-failed', initFailed); 
+   </script>
+   <script>
+           function openNewLink() {
+               // Replace 'https://www.example.com' with the URL you want to open
+               var newLink = gons;
+
+               // Open the new link in a new window or tab
+               window.open(newLink, '_blank');
+           }
+   </script>
+     <script>
+           // Mendapatkan ID dan nilai "onclick" dari URL web
+           var url = new URL(window.location.href);
+           var idFromURL = url.searchParams.get("id");
+
+
+           // Mengganti ID dan atribut "onclick" elemen dengan nilai dari URL
+           var element = document.getElementById("xystv");
+           if (element) {
+               if (idFromURL) {
+                   element.id = idFromURL;
+               }
+
+           }
+     </script>
+
+
+
+
+   </html>
