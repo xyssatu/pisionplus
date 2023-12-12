@@ -303,7 +303,7 @@ async function init7() {
   player.configure({
     drm: {
       clearKeys: {
-        '4d38060bf41b3c29df0ec950ece6b5da': '7ee9506b13480491d79b71c062ab5366'
+        '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7'
       }
     }
   });
