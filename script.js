@@ -51,10 +51,10 @@ let my_cinema = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema/sa_dash_vm
 let my_cinema_asia = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
 let my_family = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyFamily/sa_dash_vmx/MyFamily.mpd';
 
-//entertainment
+//entertainment. https://alpukat-live-cdn.mncnow.id/live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd
 let tvn = 'https://alpukat-live-cdn.mncnow.id/live/eds/tvN/sa_dash_vmx/tvN.mpd';
 let hits = 'https://alpukat-live-cdn.mncnow.id/live/eds/HITS/sa_dash_vmx/HITS.mpd';
-let musictv = 'https://alpukat-live-cdn.mncnow.id/live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd';
+let musictv = 'https://alpukat-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
 
 
 
