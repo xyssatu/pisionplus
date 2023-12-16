@@ -4,7 +4,7 @@ let punya_sportstar3 = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCSport
 let punya_sportstar4 = 'https://pisionplus.xyssatu.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
 let punya_sportstar2 = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 let punya_sportstar1 = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
-let punya_oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+let oktv = 'https://mangga-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
 let punya_musictv = 'https://pisionplus.xyssatu.workers.dev/live/eds/soccerchannel-HD/sa_dash_vmx/soccerchannel-HD.mpd';
 let punya_rcti = 'https://pisionplus.xyssatu.workers.dev/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
 
@@ -147,7 +147,7 @@ async function initOktv() {
   player.addEventListener('error', onPlayerErrorEvent);
   controls.addEventListener('error', onUIErrorEvent);
   try {
-    await player.load(punya_oktv);
+    await player.load(oktv);
     console.log('The video has now been loaded!');
   } catch (error) {
     onPlayerError(error);
@@ -323,7 +323,7 @@ function changeSourceSportstar4() {
 }
 
 function changeSourceOktv() {
-  punya_oketv = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+  oketv = 'https://lsbplus.pisionpluss6.workers.dev/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
   initOktv();
 }
 
