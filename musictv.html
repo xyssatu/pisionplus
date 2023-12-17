@@ -2,20 +2,13 @@
 <html>
 <head>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-<meta name="referrer" content="no-referrer"/>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.3/shaka-player.ui.min.js' crossorigin='anonymous'></script>
-
-
-<script src='https://player-95m.pages.dev/shaka.js' > </script>
-	<script src='https://pisionplus.pages.dev/script.js'> </script>
 <link rel='stylesheet' href='https://reisyah.github.io/ngopy/shakacontrol.css' crossorigin='anonymous'/>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/gaya.css' crossorigin='anonymous'/>
 </head>
-
-	
 <body bgcolor='black' style='margin:0' oncontextmenu='return false' onkeydown='return false' onmousedown='return false'>
 <div id="vidio" data-shaka-player-container style='position:absolute;z-index: -1;top: 0;left: 0;width: 100%; height: 100%;object-fit:fill cover;'>
-	<video autoplay data-shaka-player id='musictv' poster="https://Arjunaaaaa.github.io/lsbtv/poster.jpg" style='width:100%;height:100%;'></video>
+	<video autoplay data-shaka-player id='video' poster="https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/poster.jpg" style='width:100%;height:100%;'></video>
 	<div class="shaka-controls-container" shown="true">
 		<div class="shaka-scrim-container"></div>
 		<div class="shaka-play-buton-container">
@@ -45,12 +38,12 @@
 		<center>
 		<fieldset class="btn0">
   <legend class="btn1" >ASPEK RASIO</legend>
-<button class="btn2" onclick="ganti_musictv ()">EROR? COBA INI
-</button>			
  <button class="btn2" onclick="fill ()">FILL
   <button class="btn2" onclick="fit ()">FIT
+ <button class="btn2" onclick="zoomIn ()">ZOOM IN
+ <button class="btn2" onclick="zoomOut ()">ZOOM OUT
  </button>
-  <a href="go:nsmusictv" class="btn2" >OPEN NS PLAYER
+   <a href="go:nse2probl" class="btn2" >OPEN NS PLAYER
  </a>
 </fieldset>
 		  
@@ -62,8 +55,9 @@
 <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/aspekrasio.js' crossorigin='anonymous'></script>
 <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/popupwindow.js' crossorigin='anonymous'></script>
 <script src='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/aspekrasio.js' crossorigin='anonymous'>
-</script>
-	<script src='https://pisionplus.pages.dev/script.js'> </script>
+ </script>
+ 
+ 
  <!-- STOP NYURI GA BAIK -->
 
    
@@ -77,19 +71,23 @@ const config = {
         buffered: 'red',
         played: 'yellow',
       }
-    }
+    }//https://alpukat-live-cdn.mncnow.id/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd
    ui.configure(config);
 const controls = ui.getControls(); 
 const player = controls.getPlayer(); 
+const punya_lsbtv = 'https://alpukat-live-cdn.mncnow.id//live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd';
 player.configure({
   drm: {
-    clearKeys: {
-   keyid : key
+   clearKeys: {
+   //   'key-id-in-hex': 'key-in-hex',
+     '0bea88ab972e06760a04712cc423d841':'4039d607f88f1b1f677e4beb6ee66637'
     }
-  }
+   }
+   
 });
 //player.configure({drm:{servers:{'com.widevine.alpha':'https://license.dstv.com/widevine/getLicense?CrmId=afl&AccountId=afl&ContentId=SH2&SessionId=D3C00F885C24B9C6&Ticket=C839A8D71AB94299'}}}); 
-
+player.configure('manifest.dash.ignoreMinBufferTime', true);
+player.configure('streaming.rebufferingGoal', 1/* second */);
 window.player = player; 
 window.ui = ui; 
 
@@ -104,5 +102,5 @@ function initFailed(errorEvent) {console.error('Unable to load the UI library!')
 document.addEventListener('shaka-ui-loaded', init); 
 document.addEventListener('shaka-ui-load-failed', initFailed); 
 </script>
-	 
+
 </html>
