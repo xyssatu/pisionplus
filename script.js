@@ -54,7 +54,7 @@ let my_family = 'https://alpukat-live-cdn.mncnow.id/live/eds/MyFamily/sa_dash_vm
 //entertainment. https://alpukat-live-cdn.mncnow.id/live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd
 let tvn = 'https://alpukat-live-cdn.mncnow.id/live/eds/tvN/sa_dash_vmx/tvN.mpd';
 let hits = 'https://alpukat-live-cdn.mncnow.id/live/eds/HITS/sa_dash_vmx/HITS.mpd';
-let musictv = 'https://alpukat-live-cdn.mncnow.id/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+let musictv = 'https://alpukat-live-cdn.mncnow.id/live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd';
 
 
 
