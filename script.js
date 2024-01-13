@@ -360,40 +360,6 @@ async function init8() {
 
 //LOKAL
 
-async function init52() {
-  const video = document.getElementById('oktv');
-  const ui = video['ui'];
-  const config = {
-    'seekBarColors': {
-      base: 'blue',
-      buffered: 'red',
-      played: 'yellow',
-    }
-  };
-  ui.configure(config);
-  const controls = ui.getControls();
-  const player = controls.getPlayer();
-  player.configure({
-    drm: {
-      clearKeys: {
-        '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7'
-      }
-    }
-  });
-  player.configure('manifest.dash.ignoreMinBufferTime', true);
-  player.configure('streaming.rebufferingGoal', 1 /* second */);
-  window.player = player;
-  window.ui = ui;
-
-  player.addEventListener('error', onPlayerErrorEvent);
-  controls.addEventListener('error', onUIErrorEvent);
-  try {
-    await player.load(oktv);
-    console.log('The video has now been loaded!');
-  } catch (error) {
-    onPlayerError(error);
-  }
-}
 
 
 async function init9() {
@@ -1949,6 +1915,40 @@ async function init51() {
 }
 
 
+async function init52() {
+  const video = document.getElementById('oktv');
+  const ui = video['ui'];
+  const config = {
+    'seekBarColors': {
+      base: 'blue',
+      buffered: 'red',
+      played: 'yellow',
+    }
+  };
+  ui.configure(config);
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+  player.configure({
+    drm: {
+      clearKeys: {
+        '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7'
+      }
+    }
+  });
+  player.configure('manifest.dash.ignoreMinBufferTime', true);
+  player.configure('streaming.rebufferingGoal', 1 /* second */);
+  window.player = player;
+  window.ui = ui;
+
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+  try {
+    await player.load(oktv);
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
 
 
 
