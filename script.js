@@ -2081,6 +2081,7 @@ document.addEventListener('shaka-ui-loaded', init50);
 
  document.addEventListener('shaka-ui-loaded', init51);
  document.addEventListener('shaka-ui-loaded', init52);
+document.addEventListener('shaka-ui-loaded', init53);
 
 //SPORT
 
