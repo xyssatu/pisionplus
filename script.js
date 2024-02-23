@@ -2096,7 +2096,7 @@ function ganti_ss2() {
 
 function ganti_ss3sd() {
   ss3 = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
-  init3();
+  init53();
 }
 function ganti_ss4() {
   ss4 = 'https://pisionplus.xyssatu.workers.dev/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
@@ -2346,5 +2346,5 @@ function ganti_oktv() {
 
 function ganti_ss3() {
   ss3 = 'https://pisionplus.xyssatu.workers.dev/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
-  init53();
+  init3();
 }
