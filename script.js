@@ -2345,6 +2345,6 @@ function ganti_oktv() {
 }
 
 function ganti_ss3() {
-  ss3 = 'https://d1abp075u76pbq.cloudfront.net/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  ss3 = 'https://pisionplus.xyssatu.workers.dev/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
   init3();
 }
