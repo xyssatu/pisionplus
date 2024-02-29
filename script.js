@@ -2,8 +2,8 @@
 //SPORTS
 
 let soccerch = 'https://cempedak-live-cdn.mncnow.id/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
-let ss3sd = 'https://d1abp075u76pbq.cloudfront.net/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
-let ss3 = 'https://d1abp075u76pbq.cloudfront.net/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+let ss3 = 'https://d1abp075u76pbq.cloudfront.net/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
+let ss3sd = 'https://d1abp075u76pbq.cloudfront.net/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
 let ss4 = 'https://cempedak-live-cdn.mncnow.id/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
 let ss2 = 'https://cempedak-live-cdn.mncnow.id/live/eds/MNCSports2-HD/sa_dash_vmx/MNCSports2-HD.mpd';
 let ss1 = 'https://cempedak-live-cdn.mncnow.id/live/eds/MNCSports-HD/sa_dash_vmx/MNCSports-HD.mpd';
@@ -2341,12 +2341,12 @@ function ganti_oktv() {
 }
 
 
-function ganti_ss3sd() {
-  ss3sd = 'https://pisionplus.xyssatuu.workers.dev/cempedak-live-cdn.mncnow.id/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
-  init53();
+function ganti_ss3() {
+  ss3 = 'https://pisionplus.xyssatuu.workers.dev/cempedak-live-cdn.mncnow.id/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
+  init3();
 }
 
-function ganti_ss3() {
-  ss3 = 'https://pisionplus.xyssatuu.workers.dev/cempedak-live-cdn.mncnow.id/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
-  init3();
+function ganti_ss3sd() {
+  ss3sd = 'https://pisionplus.xyssatuu.workers.dev/cempedak-live-cdn.mncnow.id/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
+  init53();
 }
