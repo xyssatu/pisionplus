@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+  <script src='https://xystv.pages.dev/player/ui.min.js' crossorigin='anonymous'></script>
+  <script src='https://xystv.pages.dev/pisionplus/ch.js'> </script>
+  <link rel='stylesheet' href='https://xystv.pages.dev/player/controls.min.css' crossorigin='anonymous'/>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://xystv.pages.dev/player/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: .94rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #aaa;
+      text-align: left;
+      background-color: #000;
+    }
+  </style>
+  <script src="https://xystv.pages.dev/player/captos.js"></script>
+</head>
+<body bgcolor='black' style='margin:0' oncontextmenu='return false' onkeydown='return false' onmousedown='return false'>
+  <div id='vidio' class="vidio" data-shaka-player-container style='position:absolute;z-index: -1;top: 0;left: 0;width: 100%; height: 100%;object-fit:fill cover;'>
+    
+    <video autoplay data-shaka-player id='oktv' class='rasio' poster="https://xystv.pages.dev/player/poster.jpg" style='width:100%;height:100%;'></video>
+    <div class="shaka-controls-container" shown="true">
+      <div class="shaka-scrim-container"></div>
+      <div class="shaka-play-buton-container">
+        <button class="shaka-play-button shaka-no-propagation" ion="pause" aria-abel="Pause"></button>
+      </div>
+      <div class="shaka-server-side-ad-container"></div>
+      <div class="shaka-bottom-controls shaka-no-propagation">
+        <div class="shaka-ad-controls shaka-hidden">
+          <div class="shaka-ad-position shaka-hidden">
+            <span class="shaka-ad-position-span"></span>
+          </div>
+          <div class="shaka-ad-counter">
+            <span class="shaka-ad-counter-span"></span>
+          </div>
+        </div>
+        <div class="shaka-controls-button-panel shaka-show-controls-on-mouse-over">
+          <img src="https://xystv.pages.dev/player/watermark.png" style='width:15% ;height:100%;' class="shaka-fullscreen-button material-icons-round shaka-tooltip" aria-label="mute">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='fixedban' style='width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:;bottom:0;z-index:999;-webkit-transform:translateZ(0);'>
+    <div>
+      <div id='fixedban' style='width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:;bottom:0;z-index:999;-webkit-transform:translateZ(0);'>
+        <div>
+          <a id='close-fixedban' onclick='document.getElementById("fixedban").style.display = "none";' style='cursor:pointer;'><img alt='close' src='https://xystv.pages.dev/player/btn_close.gif' title='close button' style='vertical-align:middle;'/></a>
+        </div>
+        <div style='text-align:center;display:block;max-width:100%;height:auto;overflow:hidden;margin:auto'>
+          <center>
+<div class="row" style="padding:0px;margin-left:0px;margin-bottom:px">
+<div class="col-3" style="padding:0px;"> 
+<div class="card game-itme border-2 list-levels " style="margin:0px;padding:0px;border-radius:0px;border: 1px solid #000">
+<div class="w-100 time-is-captitle" style="text-align:center;padding:0px;margin-left:0" onclick="changePlayer()" ><font style="font-size:9px;font-weight:600;color:#fff">
+EROR? CLICK HERE!</font></div></a></div></div>
+<div class="col-3" style="padding:0px;"> 
+<div class="card game-itme border-1 list-levels " style="margin:0px;padding:0px;border-radius:0px;border: 1px solid #000">
+<div class="w-100 time-is-captitle" style="text-align:center;padding:0px;margin-left:0" onclick="toggleFillFit ()" ><font style="font-size:9px;font-weight:600;color:#fff">
+FIL/FIT</font></div></a></div></div>
+ 
+<div class="col-3" style="padding:0px;"> 
+<div class="card game-itme border-1 list-levels " style="margin:0px;padding:0px;border-radius:0px;border: 1px solid #000">
+<div class="w-100 time-is-captitle" style="text-align:center;padding:0px;margin-left:0" onclick="toggleZoom ()" ><font style="font-size:9px;font-weight:600;color:#fff">
+ZOOM IN/OUT</font></div></a></div></div>
+
+<div class="col-3" style="padding:0px;"> 
+<div class="card game-itme border-1 list-levels " style="margin:0px;padding:0px;border-radius:0px;border: 1px solid #000">
+<div class="w-100 time-is-captitle" style="text-align:center;padding:0px;margin-left:0"><font style="font-size:9px;font-weight:600;color:#fff"><a href= "go:nsoktv">
+  OPEN NS PLAYER </font></div> </a></a></div></div></center></div></div>
+
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='https://xystv.pages.dev/player/aspekRasio.js' crossorigin='anonymous'></script>
+
+<script src='https://xystv.pages.dev/pisionplus/ch.js' > </script>
+ 
+	</body>
+  
+</html>
