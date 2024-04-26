@@ -1,71 +1,71 @@
 
 //SPORTS
 
-let soccerch = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
+let soccerch = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd';
 let ss3sd = 'https://d1abp075u76pbq.cloudfront.net/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd';
 let ss3 = 'https://d1abp075u76pbq.cloudfront.net/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd';
-let ss4 = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
-let ss2 = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/MNCSports2-HD/sa_dash_vmx/MNCSports2-HD.mpd';
-let ss1 = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/MNCSports-HD/sa_dash_vmx/MNCSports-HD.mpd';
-let spotv= 'https://d61o6fdtwhk49.cloudfront.net/live/eds/SPOTV-HD/sa_dash_vmx/SPOTV-HD.mpd';
-let spotv2= 'https://d61o6fdtwhk49.cloudfront.net/live/eds/SPOTV2-HD/sa_dash_vmx/SPOTV2-HD.mpd';
-let fight= 'https://d61o6fdtwhk49.cloudfront.net/live/eds/FightSports/sa_dash_vmx/FightSports.mpd';
+let ss4 = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd';
+let ss2 = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/MNCSports2-HD/sa_dash_vmx/MNCSports2-HD.mpd';
+let ss1 = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/MNCSports-HD/sa_dash_vmx/MNCSports-HD.mpd';
+let spotv= 'https://dsgtq5sngxkde.cloudfront.net/live/eds/SPOTV-HD/sa_dash_vmx/SPOTV-HD.mpd';
+let spotv2= 'https://dsgtq5sngxkde.cloudfront.net/live/eds/SPOTV2-HD/sa_dash_vmx/SPOTV2-HD.mpd';
+let fight= 'https://dsgtq5sngxkde.cloudfront.net/live/eds/FightSports/sa_dash_vmx/FightSports.mpd';
 
 
 //LOKAL
-let oktv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
-let mnctv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/MNCTV-HD/sa_dash_vmx/MNCTV-HD.mpd';
-let rcti = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
-let gtv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/GTV-HD/sa_dash_vmx/GTV-HD.mpd';
-let inews = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/iNewsTV-HDD/sa_dash_vmx/iNewsTV-HDD.mpd';
-let trans7 = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Trans7-2/sa_dash_vmx/Trans7-2.mpd';
-let transtv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/TransTV-2/sa_dash_vmx/TransTV-2.mpd';
-let antv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/ANTV/sa_dash_vmx/ANTV.mpd';
-let tvone = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/TVOne/sa_dash_vmx/TVOne.mpd ';
-let metrotv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Metro-TV2/sa_dash_vmx/Metro-TV2.mpd';
-let tvri = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/PemersatuBangsa/sa_dash_vmx/PemersatuBangsa.mpd';
-let kompas = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/KompasTV/sa_dash_vmx/KompasTV.mpd';
-let rtv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/RTV/sa_dash_vmx/RTV.mpd';
-let net = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/NetTV-HD/sa_dash_vmx/NetTV-HD.mpd';
+let oktv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/OKTV/sa_dash_vmx/OKTV.mpd';
+let mnctv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/MNCTV-HD/sa_dash_vmx/MNCTV-HD.mpd';
+let rcti = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd';
+let gtv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/GTV-HD/sa_dash_vmx/GTV-HD.mpd';
+let inews = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/iNewsTV-HDD/sa_dash_vmx/iNewsTV-HDD.mpd';
+let trans7 = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Trans7-2/sa_dash_vmx/Trans7-2.mpd';
+let transtv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/TransTV-2/sa_dash_vmx/TransTV-2.mpd';
+let antv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/ANTV/sa_dash_vmx/ANTV.mpd';
+let tvone = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/TVOne/sa_dash_vmx/TVOne.mpd ';
+let metrotv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Metro-TV2/sa_dash_vmx/Metro-TV2.mpd';
+let tvri = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/PemersatuBangsa/sa_dash_vmx/PemersatuBangsa.mpd';
+let kompas = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/KompasTV/sa_dash_vmx/KompasTV.mpd';
+let rtv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/RTV/sa_dash_vmx/RTV.mpd';
+let net = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/NetTV-HD/sa_dash_vmx/NetTV-HD.mpd';
 
 
 //MOVIES
-let tvn_movies = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
-let fmn = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/FMN/sa_dash_vmx/FMN.mpd';
-let hits_movies = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
-let imc = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/IndonesiaMovieChannels-HD/sa_dash_vmx/IndonesiaMovieChannels-HD.mpd';
-let galaxy = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Galaxy-HD/sa_dash_vmx/Galaxy-HD.mpd';
-let galaxy_premium = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/GalaxyPremium-HD/sa_dash_vmx/GalaxyPremium-HD.mpd';
-let thrill = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Thrill/sa_dash_vmx/Thrill.mpd';
-let cinemaword = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/CinemaWorld/sa_dash_vmx/CinemaWorld.mpd';
-let celestial_movies = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/CelestialMovie/sa_dash_vmx/CelestialMovie.mpd';
-let celestial_clasic_movies = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
-let zee_bioskop = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/ZeeBIOSKOP/sa_dash_vmx/ZeeBIOSKOP.mpd';
-let axn = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/AXN/sa_dash_vmx/AXN.mpd';
-let cinemachi = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Cinemachi-HD/sa_dash_vmx/Cinemachi-HD.mpd';
-let cinemachi_action = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
-let cinemachi_kids = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Cinemachi-Kids-HD/sa_dash_vmx/Cinemachi-Kids-HD.mpd';
-let cinemachi_max = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Cinemachi-Max-HD/sa_dash_vmx/Cinemachi-Max-HD.mpd';
-let cinemachi_xtra = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Cinemachi-Xtra-HD/sa_dash_vmx/Cinemachi-Xtra-HD.mpd';
-let my_cinema = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/MyCinema/sa_dash_vmx/MyCinema.mpd';
-let my_cinema_asia = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
-let my_family = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/MyFamily/sa_dash_vmx/MyFamily.mpd';
+let tvn_movies = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/tvNMovies/sa_dash_vmx/tvNMovies.mpd';
+let fmn = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/FMN/sa_dash_vmx/FMN.mpd';
+let hits_movies = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd';
+let imc = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/IndonesiaMovieChannels-HD/sa_dash_vmx/IndonesiaMovieChannels-HD.mpd';
+let galaxy = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Galaxy-HD/sa_dash_vmx/Galaxy-HD.mpd';
+let galaxy_premium = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/GalaxyPremium-HD/sa_dash_vmx/GalaxyPremium-HD.mpd';
+let thrill = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Thrill/sa_dash_vmx/Thrill.mpd';
+let cinemaword = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/CinemaWorld/sa_dash_vmx/CinemaWorld.mpd';
+let celestial_movies = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/CelestialMovie/sa_dash_vmx/CelestialMovie.mpd';
+let celestial_clasic_movies = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/CelestialClassic/sa_dash_vmx/CelestialClassic.mpd';
+let zee_bioskop = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/ZeeBIOSKOP/sa_dash_vmx/ZeeBIOSKOP.mpd';
+let axn = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/AXN/sa_dash_vmx/AXN.mpd';
+let cinemachi = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Cinemachi-HD/sa_dash_vmx/Cinemachi-HD.mpd';
+let cinemachi_action = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Cinemachi-Action/sa_dash_vmx/Cinemachi-Action.mpd';
+let cinemachi_kids = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Cinemachi-Kids-HD/sa_dash_vmx/Cinemachi-Kids-HD.mpd';
+let cinemachi_max = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Cinemachi-Max-HD/sa_dash_vmx/Cinemachi-Max-HD.mpd';
+let cinemachi_xtra = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Cinemachi-Xtra-HD/sa_dash_vmx/Cinemachi-Xtra-HD.mpd';
+let my_cinema = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/MyCinema/sa_dash_vmx/MyCinema.mpd';
+let my_cinema_asia = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/MyCinema-Asia/sa_dash_vmx/MyCinema-Asia.mpd';
+let my_family = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/MyFamily/sa_dash_vmx/MyFamily.mpd';
 
-//entertainment. https://d61o6fdtwhk49.cloudfront.net/live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd
-let tvn = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/tvN/sa_dash_vmx/tvN.mpd';
-let hits = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/HITS/sa_dash_vmx/HITS.mpd';
-let musictv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd';
+//entertainment. https://dsgtq5sngxkde.cloudfront.net/live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd
+let tvn = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/tvN/sa_dash_vmx/tvN.mpd';
+let hits = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/HITS/sa_dash_vmx/HITS.mpd';
+let musictv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/MusicChannel/sa_dash_vmx/MusicChannel.mpd';
 
 
 
 //kids
-let babytv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
-let kidstv = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/KidsChannel/sa_dash_vmx/KidsChannel.mpd';
-let nickeloden = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Nickelodeon/sa_dash_vmx/Nickelodeon.mpd';
-let animax = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Animax/sa_dash_vmx/Animax.mpd';
-let my_kids = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/My-Kids/sa_dash_vmx/My-Kids.mpd';
-let cebebies = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/Cbeebies/sa_dash_vmx/Cbeebies.mpd';
-let nick_jr = 'https://d61o6fdtwhk49.cloudfront.net/live/eds/NickJr-HDD/sa_dash_vmx/NickJr-HDD.mpd';
+let babytv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/BabyTV-NewHD/sa_dash_vmx/BabyTV-NewHD.mpd';
+let kidstv = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/KidsChannel/sa_dash_vmx/KidsChannel.mpd';
+let nickeloden = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Nickelodeon/sa_dash_vmx/Nickelodeon.mpd';
+let animax = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Animax/sa_dash_vmx/Animax.mpd';
+let my_kids = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/My-Kids/sa_dash_vmx/My-Kids.mpd';
+let cebebies = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/Cbeebies/sa_dash_vmx/Cbeebies.mpd';
+let nick_jr = 'https://dsgtq5sngxkde.cloudfront.net/live/eds/NickJr-HDD/sa_dash_vmx/NickJr-HDD.mpd';
 
 
 
